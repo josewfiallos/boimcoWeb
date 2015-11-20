@@ -1,0 +1,883 @@
+body{
+  font-family: "Lato" sans-serif;
+  font-size:16px;
+  font-size: 100%;
+  font-size: 1em;
+  margin:0px;
+  padding: 0px;
+}
+
+/* INICIO */
+
+.HomeHeader{
+  background-color: #EEEEEE;
+}
+
+.LogoHome{
+  position: relative;
+  left: 14em;
+  top: 1em;
+  width: 30%;
+  min-height: 150px;
+  background-image: url("Imgs/logo.png");
+  background-repeat: no-repeat;
+  background-size:65%;
+  -webkit-transition: 0.2s min-height ease;
+  -moz-transition: 0.2s min-height ease;
+  -o-transition: 0.2s min-height ease;
+  transition: 0.2s min-height ease;
+}
+
+.HomeHeader .Menu{
+    position: relative;
+    opacity: 1;
+    height: 39px;
+    text-align: center;
+    padding: 0px  ;
+    margin: 0px;
+    bottom: 5.3em;
+}
+
+.HomeHeader .Menu li{
+  position: relative;
+    display: inline;
+    left: 10em
+}
+.HomeHeader .Menu li a{
+    display: inline-block;
+    padding: 1em;
+    text-decoration: none;
+    font-family: "Lato" sans-serif;
+    font-size: 13px;
+    color:black;
+    text-shadow: 0 1 0.125em #000;
+    transition: background-color 0.3s linear;
+    -o-transition: background-color 0.3s linear;
+    -moz-transition: background-color 0.3s linear;
+    -webkit-transition: background-color 0.3s linear;
+}
+
+.HomeHeader .Menu li a:hover{
+  background-color: #F44336;
+  color: white;
+}
+
+.Content .WelcomeImg{
+  position: absolute;
+  top: 9.4em;
+  width: 100%;
+  height: 503px;
+  background-color: rgb(0, 0, 0);
+  background-image: url("Imgs/banner.png");
+  background-repeat: no-repeat;
+  background-size:100%;
+  transition: background-image 0.3s linear;
+  -o-transition: background-image 0.3s linear;
+  -moz-transition: background-image 0.3s linear;
+  -webkit-transition: background-image 0.3s linear;
+}
+
+
+.Content .WelcomeImg p{
+  position: relative;
+  color: #ffffff;
+  font-family: "Lato" sans-serif;
+  font-weight: lighter;
+  font-size: 100px;
+  text-align: center;
+  top: 1em;
+
+}
+
+.Content .InfoHome{
+  position: absolute;
+  top: 40.8em;
+  height: 100%;
+  width: 100%;
+  background-color: #EEEEEE;
+}
+
+.Content .InfoHome{
+  text-align: center;
+}
+
+.Content .InfoHome li{
+  position: relative;
+  display: inline;
+  padding: 7em;
+  top: 16em;
+  text-decoration: none;
+  font-family: "Lato" sans-serif;
+}
+
+.Content .InfoHome #time{
+  position: relative;
+  right: 1em;
+}
+
+.Content .InfoHome #work{
+  position: relative;
+  left: 0.3em;
+}
+
+.Content .InfoHome #place{
+  position: relative;
+  left: 1.4em;
+}
+
+.Content .InfoHome .Time p, .Gear p, .Place p{
+  visibility: hidden;
+  opacity: 0;
+}
+
+
+.Content .InfoHome .Time:hover, .Gear:hover, .Place:hover{
+  background-color: #ffbc00;
+}
+
+
+.Content .InfoHome .Time{
+  position: absolute;
+  top: 5em;
+  left: 18.2em;
+  width: 150px;
+  height: 150px;
+  background-image: url("Imgs/time.png");
+  background-repeat: no-repeat;
+  background-size:100%;
+  transition: background-color 0.3s linear;
+  -o-transition: background-color 0.3s linear;
+  -moz-transition: background-color 0.3s linear;
+  -webkit-transition: background-color 0.3s linear;
+}
+
+.Content .InfoHome .Gear{
+  position: absolute;
+  top: 5em;
+  left: 37.6em;
+  width: 150px;
+  height: 150px;
+  background-image: url("Imgs/gear.png");
+  background-repeat: no-repeat;
+  background-size:100%;
+  transition: background-color 0.3s linear;
+  -o-transition: background-color 0.3s linear;
+  -moz-transition: background-color 0.3s linear;
+  -webkit-transition: background-color 0.3s linear;
+}
+
+.Content .InfoHome .Place{
+  position: absolute;
+  top: 5em;
+  left: 57em;
+  width: 150px;
+  height: 150px;
+  background-image: url("Imgs/place.png");
+  background-repeat: no-repeat;
+  background-size:100%;
+  transition: background-color 0.3s linear;
+  -o-transition: background-color 0.3s linear;
+  -moz-transition: background-color 0.3s linear;
+  -webkit-transition: background-color 0.3s linear;
+}
+
+.Content .InfoHome .Time p{
+  position: relative;
+  top: 15em;
+  left: 0.6em;
+  width: 500%;
+  text-align: justify;
+  color: black;
+  transition:visibility 0s linear 0.2s,opacity 0.2s linear;
+}
+
+.Content .InfoHome .Time:hover p{
+  visibility: visible;
+  opacity: 1;
+  position: relative;
+  top: 15em;
+  left: 0.6em;
+  width: 500%;
+  text-align: justify;
+  transition-delay:0s;
+}
+
+.Content .InfoHome .Gear p{
+  position: relative;
+  top: 15em;
+  right: 18.8em;
+  width: 500%;
+  text-align: justify;
+  color: black;
+  transition:visibility 0s linear 0.2s,opacity 0.2s linear;
+}
+
+.Content .InfoHome .Gear:hover p{
+  visibility: visible;
+  opacity: 1;
+  position: relative;
+  top: 15em;
+  right: 18.8em;
+  width: 500%;
+  text-align: justify;
+    transition-delay:0s;
+}
+
+.Content .InfoHome .Place p{
+  position: relative;
+  top: 15em;
+  right: 38.2em;
+  width: 500%;
+  text-align: justify;
+  color: black;
+  transition:visibility 0s linear 0.2s,opacity 0.2s linear;
+}
+
+.Content .InfoHome .Place:hover p{
+  visibility: visible;
+  opacity: 1;
+  position: relative;
+  top: 15em;
+  right: 38.2em;
+  width: 500%;
+  text-align: justify;
+  transition-delay:0s;
+}
+
+.Footer{
+  position: absolute;
+  background-color: #424242;
+  top: 76.3em;
+  width: 100%;
+  height: 13%;
+}
+
+.Footer .Twitter{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 1.6em;
+  right: 9em;
+  background-image: url("Imgs/twitter.png");
+  background-repeat: no-repeat;
+  background-size:100%;
+  transition: background-color 0.3s linear;
+  -o-transition: background-color 0.3s linear;
+  -moz-transition: background-color 0.3s linear;
+  -webkit-transition: background-color 0.3s linear;
+}
+
+.Footer .Facebook{
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  right: 5em;
+  top: 1.7em;
+  background-image: url("Imgs/fb.png");
+  background-repeat: no-repeat;
+  background-size:100%;
+  transition: background-color 0.3s linear;
+  -o-transition: background-color 0.3s linear;
+  -moz-transition: background-color 0.3s linear;
+  -webkit-transition: background-color 0.3s linear;
+}
+
+.Footer .GooglePlus{
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 1em;
+  top: 1.9em;
+  background-image: url("Imgs/gplus.png");
+  background-repeat: no-repeat;
+  background-size:100%;
+  transition: background-color 0.3s linear;
+  -o-transition: background-color 0.3s linear;
+  -moz-transition: background-color 0.3s linear;
+  -webkit-transition: background-color 0.3s linear;
+}
+
+.Footer p{
+  position: absolute;
+  color: #ffffff;
+  top: 2.2em;
+  left: 37%;
+  font-size: 12px;
+}
+
+/* SOBRE NOSOTROS */
+
+.ContentAbout .imagenSobreNososotros{
+  position: absolute;
+  top: 9.4em;
+  width: 100%;
+  height: 503px;
+  background-color: rgb(0, 0, 0);
+  background-image: url("Imgs/img1.jpg");
+  background-repeat: no-repeat;
+  background-size:100%;
+  transition: background-image 0.3s linear;
+  -o-transition: background-image 0.3s linear;
+  -moz-transition: background-image 0.3s linear;
+  -webkit-transition: background-image 0.3s linear;
+}
+
+.contenedor{
+  position: relative;
+    width: 1090px;
+    margin: auto;
+    color: black;
+    font-size: 20px;
+    padding: 20px 15px 50px 50px;
+    top: 20em;
+}
+
+#pestanas {
+    float: top;
+    font-size: 3ex;
+    font-weight: bold;
+}
+
+
+#pestanas ul{
+    margin-left: -40px;
+}
+
+#pestanas li{
+    list-style-type: none;
+    float: left;
+    text-align: center;
+    margin: 0px 2px -2px -0px;
+      background: #ffc700;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border: 2px solid bisque;
+    border-bottom: dimgray;
+    padding: 0px 20px 0px 20px;
+}
+
+
+
+#pestanas a:link{
+    text-decoration: none;
+    color: black;
+}
+
+#contenidopestanas{
+   text-align: justify;
+    clear: both;
+    background: #e7e7e7;
+    padding: 20px 0px 20px 20px;
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+    width: 1080px;
+}
+
+/*Contáctanos by Jose W. Fiallos */
+
+.contactForm ul {
+    width:750px;
+    list-style-type:none;
+	margin:0px;
+	padding:0px;
+}
+
+.contactForm li{
+	padding:12px;
+	position:relative;
+
+}
+
+.contactForm label {
+    color: #555555;
+    display: inline-block;
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 3px;
+    padding: 3px;
+    width: 90px;
+}
+
+.contactForm input {
+	height:20px;
+	width:420px;
+	padding:5px 8px;
+}
+.contactForm textarea {
+	padding:8px;
+	width:420px;
+}
+.contactForm button {
+	margin-left:0px;
+}
+
+.contactForm input:required:valid, .contactForm textarea:required:valid {
+	box-shadow: 0 0 5px #099c18;
+	border-color: #23e30b;
+}
+.contactForm input:focus:invalid, .contactForm textarea:focus:invalid {
+	box-shadow: 0 0 5px #c92d2d;
+	border-color: #f10e0e;
+}
+
+.contactForm input, .contactForm textarea {
+	border:1px solid #aaa;
+	box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+	border-radius:2px;
+	color: #000;
+	font-size: 12px;
+	padding-right:30px;
+	-moz-transition: padding .25s;
+	-webkit-transition: padding .25s;
+	-o-transition: padding .25s;
+	transition: padding .25s;
+}
+
+.contactForm input:focus, .contactForm textarea:focus {
+	background: #fff;
+	border:1px solid #413f3f;
+	box-shadow: 0 0 3px #aaa;
+	padding-right:80px;
+}
+
+.form{
+  position: absolute;
+  left: 30%;
+  top: 42em;
+  background-color: #fff;
+  height: 500px;
+  margin-top: 50px;
+}
+
+.contactImg{
+  position: absolute;
+  top: 9.4em;
+  width: 100%;
+  height: 487px;
+  background-color: rgb(0, 0, 0);
+  background-image: url("Imgs/contacus.jpg");
+  background-repeat: no-repeat;
+  background-size:100%;
+  transition: background-image 0.3s linear;
+  -o-transition: background-image 0.3s linear;
+  -moz-transition: background-image 0.3s linear;
+  -webkit-transition: background-image 0.3s linear;
+}
+
+.contactImg p{
+  position: relative;
+  color: #ffffff  ;
+  background-color: #000000;
+  font-family: "Lato" sans-serif;
+  font-weight: lighter;
+  font-size: 100px;
+  text-align: center;
+  top: 2.8em;
+  opacity: 0.8;
+}
+
+.contactForm li button{
+  position: relative;
+  width: 100px;
+  height: 40px;
+  left: 18%;
+  top: 2em;
+  margin-left: 2em;
+  background-color: #FFE082;
+  border-color: #FFE082;
+  border-radius: 0.4em;
+  transition: background-color 0.3s linear;
+  -o-transition: background-color 0.3s linear;
+  -moz-transition: background-color 0.3s linear;
+  -webkit-transition: background-color 0.3s linear;
+}
+
+.contactForm li button:hover{
+  position: relative;
+  width: 100px;
+  height: 40px;
+  left: 18%;
+  top: 2em;
+  margin-left: 2em;
+  background-color: #FFC107;
+  border-color: #FFC107;
+  border-radius: 0.4em;
+}
+
+/* GALERIA */
+
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+
+.slides {
+    padding: 0;
+    width: 1109px;
+    height: 620px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 17em;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input { display: none; }
+
+.slide-container { display: block; }
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 1109px;
+    height: 520px;
+    display: block;
+    position: absolute;
+    box-shadow: 0.2em 0.2em 0.50em;
+
+    transition: all .7s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav label {
+    width: 100px;
+    height: 83.9%;
+    display: none;
+    position: absolute;
+
+	  opacity: 0.5;
+    z-index: 9;
+    cursor: pointer;
+
+    transition: opacity .2s;
+
+    color: #FFF;
+    font-size: 126pt;
+    text-align: center;
+    line-height: 490px;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(0, 0, 0, 0.68);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label { opacity: 0.3; }
+
+.nav label:hover { opacity: 1; }
+
+.nav .next { right: 0; }
+
+input:checked + .slide-container  .slide {
+    opacity: 1;
+
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+.nav-dots {
+	width: 100%;
+	bottom: 9px;
+	height: 11px;
+	display: block;
+	position: absolute;
+	text-align: center;
+}
+
+.nav-dots .nav-dot {
+	top: -5px;
+	width: 11px;
+	height: 11px;
+	margin: 0 4px;
+	position: relative;
+	border-radius: 100%;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6 {
+	background: rgba(0, 0, 0, 0.8);
+}
+
+.Content .textimg{
+  position: absolute;
+  left: 35%;
+  top: 16.5em;
+}
+
+.Content .text {
+  position: absolute;
+  top: 5.5em;
+  left: 11.6em;
+  font-size: 54px;
+  font-family: "Lato" sans-serif;
+  font-weight: lighter;
+  color: #fff;
+}
+
+.Content .marco2{
+  position: absolute;
+  width: 75%;
+  height: 30%;
+  left: 10.5em;
+  top: 14.5em;
+  background: #000;
+  opacity: 0.8;
+}
+
+/* SERVICIOS */
+
+body h1{
+  position: relative;
+  color: #ffffff  ;
+  background-color: #000000;
+  width: 50%;
+  top: 0.5em;
+  left: 25%;
+  font-family: "Lato" sans-serif;
+  font-weight: lighter;
+  font-size: 80px;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.Servicios1{
+  position: relative;
+  margin-top: 50px;
+  width: 400px;
+  height: 300px;
+  background-image: url("Imgs/Bordadoras.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  left: 50px;
+  top: 10em;
+}
+
+.Servicios1 #info1{
+  position: relative;
+  width: 400px;
+  height: 300px;
+  background-color: rgba(31, 31, 31, 0.9);
+  -webkit- transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  opacity: 0;
+  overflow: hidden;
+
+}
+
+.Servicios1:hover #info1{
+  opacity: 1;
+}
+
+#Bordado{
+  position: relative;
+  font-family: "Lato" sans-serif;
+  color: #ffffff;
+  margin-left: -70px;
+  -webkit- transition: margin 0.2s
+  -o-transition: margin 0.2s;
+  -moz-transition: margin 0.2s;
+  transition: margin 0.2s;
+
+}
+
+.Servicios1:hover #Bordado{
+  margin-left: 10px;
+}
+
+#bDescripcion{
+
+  width: 350px;
+  text-align: center;
+  margin: auto;
+  margin-top: 350px;
+  -webkit- transition: margin 0.3s
+  -o-transition: margin 0.3s;
+  -moz-transition: margin 0.3s;
+  transition: margin 0.3s;
+  color: #fff;
+}
+
+.Servicios1:hover #bDescripcion{
+  margin-top:50px;
+}
+
+/*Impresos*/
+
+.Servicios2{
+  position: relative;
+  bottom: 300px;
+  width: 400px;
+  height: 300px;
+  background-image: url("Imgs/Impresiones.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  left: 480px;
+  bottom: 8.76em;
+}
+
+.Servicios2 #info2{
+  position: relative;
+  width: 400px;
+  height: 300px;
+  background-color: rgba(31, 31, 31, 0.9);
+  -webkit- transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  opacity: 0;
+  overflow: hidden;
+
+}
+
+.Servicios2:hover #info2{
+  opacity: 1;
+}
+
+#Impresos{
+  position: relative;
+  font-family: "Lato" sans-serif;
+  color: #ffffff;
+  margin-left: -70px;
+  -webkit- transition: margin 0.2s
+  -o-transition: margin 0.2s;
+  -moz-transition: margin 0.2s;
+  transition: margin 0.2s;
+
+}
+
+.Servicios2:hover #Impresos{
+  margin-left: 10px;
+}
+
+#iDescripcion{
+
+  width: 350px;
+  text-align: center;
+  margin: auto;
+  margin-top: 350px;
+  -webkit- transition: margin 0.3s
+  -o-transition: margin 0.3s;
+  -moz-transition: margin 0.3s;
+  transition: margin 0.3s;
+  color: #fff;
+}
+
+.Servicios2:hover #iDescripcion{
+  margin-top:50px;
+}
+
+.sContenido{
+  position: absolute;
+  top: 300px;
+}
+/*cofecc*/
+.Servicios3{
+  position: relative;
+  bottom: 600px;
+  width: 400px;
+  height: 300px;
+  background-image: url("Imgs/Confecciones.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  left: 910px;
+  bottom: 27.45em;
+}
+
+.Servicios3 #info3{
+  position: relative;
+  width: 400px;
+  height: 300px;
+  background-color: rgba(31, 31, 31, 0.9);
+  -webkit- transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  opacity: 0;
+  overflow: hidden;
+
+}
+
+.Servicios3:hover #info3{
+  opacity: 1;
+}
+
+#Confecciones{
+  position: relative;
+  font-family: "Lato" sans-serif;
+  color: #ffffff;
+  margin-left: -70px;
+  -webkit- transition: margin 0.2s
+  -o-transition: margin 0.2s;
+  -moz-transition: margin 0.2s;
+  transition: margin 0.2s;
+
+}
+
+.Servicios3:hover #Confecciones{
+  margin-left: 10px;
+}
+
+#cDescripcion{
+
+  width: 350px;
+  text-align: center;
+  margin: auto;
+  margin-top: 350px;
+  -webkit- transition: margin 0.3s
+  -o-transition: margin 0.3s;
+  -moz-transition: margin 0.3s;
+  transition: margin 0.3s;
+  color: #fff;
+}
+
+.Servicios3:hover #cDescripcion{
+  margin-top:50px;
+}
+
+
+#bEncabezado{
+
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: "Lato" sans-serif;
+
+}
+#iEncabezado{
+
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: "Lato" sans-serif;
+
+}
+#cEncabezado{
+
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: "Lato" sans-serif;
+
+}

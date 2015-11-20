@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:Bold">
+            <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:Thin">
+    <title>Boimco - Contáctanos</title>
+    <script type="text/javascript">
+
+    function validarTelefono(e){
+      key = e.keyCode || e.wich;
+      teclado = String.fromCharCode(key);
+      numeros = "0123456789";
+      especiales = "8-37-38-46";
+      tecladoEespecial = false;
+
+      for(var i in especiales){
+        if(key==especiales[i]){
+          tecladoEespecial=true;
+        }//if
+      }//for
+
+      if(numeros.indexOf(teclado)==-1 && !tecladoEespecial){
+        return false;
+
+      }//if
+
+    }//validarTelefono()
+
+    </script>
+  </head>
+  <link rel="stylesheet" href="boimco.css">
+  <body>
+    <div class="HomeHeader">
+        <div class="LogoHome"></div>
+        <div class="Menu">
+          <li><a href="home.html">Inicio</a></li>
+          <li><a href="about.html">Sobre Nososotros</a></li>
+          <li><a href="gallery.html">Galería</a></li>
+          <li><a href="services.html">Servicios</a></li>
+          <li><a href="contactus.html">Contáctanos</a></li>
+        </div>
+    </div>
+<div class="form">
+  <form class="contactForm" method="post">
+  <ul>
+     <li>
+         <label for="txtName">Nombre:</label>
+         <input type="text" id="txtName" placeholder="Escriba su Nombre" required />
+     </li>
+     <li>
+         <label for="txtEmail">Correo Electrónico:</label>
+         <input type="email" name="txtEmail" placeholder="Escriba su Correo" id="txtEmail" required />
+     </li>
+     <li>
+         <label for="txtTel">Teléfono:</label>
+         <input type="text" name="txtTel" placeholder="Sin guión ni paréntesis" id="txtTel" required maxlength="8" onkeypress="return validarTelefono(event)" onpaste="return false" />
+     </li>
+
+     <li>
+       <label for="lugar">Lugar:</label>
+       <select name="lugar">
+         <option value="tgu" selected="selected">Tegucigalpa</option>
+         <option value="sps">San Pedro Sula</option>
+         <option value="cba">Ceiba</option>
+
+
+       </select>
+     </li>
+     <li>
+         <label for="txtMsg">Mensaje:</label>
+         <textarea name="txtMsg" cols="40" rows="6" required  placeholder="Escriba su mensaje"></textarea>
+     </li>
+      <li>
+        <button class="submit" type="submit">Enviar</button>
+        <button type="reset" name="button">Limpiar</button>
+      </li>
+  </ul>
+</form>
+
+</div>
+
+<div class="contactImg"><p>
+  Contáctanos
+</p></div>
+
+
+
+    <div class="Footer">
+      <p>
+        Derechos Reservados 2015, Creado por Estudiantes Portales Web
+      </p>
+      <a href="https://www.twitter.com"> <div class="Twitter"></div></a>
+      <a href="https://www.facebook.com"><div class="Facebook"></div></a>
+      <a href="https://www.googleplus.com"><div class="GooglePlus"></div></a>
+    </div>
+  </body>
+</html>
