@@ -1,7 +1,7 @@
 <?php
   $server = "127.0.0.1";
   $user = "root";
-  $pswd = "root";
-  $database = "nw201503";
+  $pswd = "cost045";
+  $database = "boimco";
   $port = "3306";
  ?>

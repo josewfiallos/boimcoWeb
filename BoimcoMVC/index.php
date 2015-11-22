@@ -21,21 +21,33 @@
             //llamar al controlador
             require_once("controllers/home.control.php");
             break;
-        case "login":
-            require_once("controllers/login.control.php");
+        case "about":
+            require_once("controllers/about.control.php");
             break;
-        case "registro":
-            require_once("controllers/registro.control.php");
+        case "services":
+            require_once("controllers/services.control.php");
             break;
-        case "althome":
-            require_once("controllers/althome.control.php");
+        case "gallery":
+            require_once("controllers/gallery.control.php");
             break;
-        case "formulario":
-            require_once("controllers/formulario.control.php");
+        case "contactus":
+            require_once("controllers/contactus.control.php");
             break;
-        case "mensajes":
-            require_once("controllers/mensajes.control.php");
-            break;
+        // case "login":
+        //     require_once("controllers/login.control.php");
+        //     break;
+        // case "registro":
+        //     require_once("controllers/registro.control.php");
+        //     break;
+        // case "althome":
+        //     require_once("controllers/althome.control.php");
+        //     break;
+        // case "formulario":
+        //     require_once("controllers/formulario.control.php");
+        //     break;
+        // case "mensajes":
+        //     require_once("controllers/mensajes.control.php");
+        //     break;
         default:
             require_once("controllers/error.control.php");
 
