@@ -1,4 +1,3 @@
-
 </script>
 <div class="form">
   <form class="contactForm" method="post">
