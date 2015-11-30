@@ -1,3 +1,4 @@
+    <title>Inicio - BoimcoWeb</title>
 <div class="Content">
     <div class="WelcomeImg">
       <p>BIENVENIDO</p>

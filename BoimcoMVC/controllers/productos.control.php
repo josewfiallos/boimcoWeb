@@ -7,7 +7,7 @@
   require_once("libs/template_engine.php");
 
   function run(){
-    renderizar("contactus",array());
+    renderizar("productos",array());
   }
 
 

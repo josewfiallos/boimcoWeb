@@ -1,10 +1,9 @@
 <?php
 /* Error Controller
- * 2014-10-14
+ * 2014-10-14 
  * Created By OJBA
  * Last Modification 2014-10-14 20:04
  */
- //BOIMCO WEB 2015
   require_once("libs/template_engine.php");
   function run(){
     http_response_code(404);
@@ -18,7 +17,7 @@
                             )
                );
   }
-
+ 
 
   run();
 ?>

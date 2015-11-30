@@ -33,12 +33,12 @@
         case "contactus":
             require_once("controllers/contactus.control.php");
             break;
-        // case "login":
-        //     require_once("controllers/login.control.php");
-        //     break;
-        // case "registro":
-        //     require_once("controllers/registro.control.php");
-        //     break;
+        case "registro":
+            require_once("controllers/registro.control.php");
+            break;
+        case "productos":
+            require_once("controllers/productos.control.php");
+            break;
         // case "althome":
         //     require_once("controllers/althome.control.php");
         //     break;

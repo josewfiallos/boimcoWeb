@@ -1,3 +1,4 @@
+    <title>Galeria - BoimcoWeb</title>
 <div class="Content">
         <div class="marco2"></div>
   <div class="text">
