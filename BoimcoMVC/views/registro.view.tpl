@@ -9,27 +9,27 @@
     Registro
   </p></div>
   <body>
-    <form class="FormRegistro" action="registro.view.tpl" method="post">
+    <form class="FormRegistro" action="index.php?page=registro" method="post">
       <ul>
          <li>
              <label for="txtName">Nombre: </label>
-             <input type="text" name="nombreUsuario" id="nombreUsuario" placeholder="Primer Nombre" maxlength="15" required />
+             <input type="text" name="nombreUsuario" value="{{nombreUsuario}}" id="nombreUsuario" placeholder="Primer Nombre" maxlength="15" required />
          </li>
          <li>
            <label for="txtApellido">Apellido: </label>
-           <input type="text" name="apellidoUsuario" id="apellidoUsuario" placeholder="Primer Apellido" maxlength="15" required />
+           <input type="text" name="apellidoUsuario" value="{{apellidoUsuario}}" id="apellidoUsuario" placeholder="Primer Apellido" maxlength="15" required />
          </li>
          <li>
              <label for="txtEmail">Correo Electrónico: </label>
-             <input type="email" name="emailUsuario" placeholder="Escriba su Correo Electronico" id="emailUsuario" required />
+             <input type="email" name="emailUsuario" value="{{emailUsuario}}" placeholder="Escriba su Correo Electronico" id="emailUsuario" required />
          </li>
          <li>
              <label for="txtTel">Teléfono: </label>
-             <input type="text" name="telefonoUsuario" placeholder="Sin guión ni paréntesis" id="telefonoUsuario" required maxlength="8" onkeypress="return validarTelefono(event)" onpaste="return false" />
+             <input type="text" name="telefonoUsuario" value="{{telefonoUsuario}}" placeholder="Sin guión ni paréntesis" id="telefonoUsuario" required maxlength="8" onkeypress="return validarTelefono(event)" onpaste="return false" />
          </li>
          <li>
           <label for="txtContraseña">Contraseña: </label>
-          <input type="text" name="passUsuario" placeholder="Introduzca su contraseña (Min 8 Caracteres)" maxlength="16" minlength="8" required/>
+          <input type="password" name="passUsuario" placeholder="Introduzca su contraseña (Min 8 Caracteres)" maxlength="16" minlength="8" required/>
            </select>
          </li>
           <li>
