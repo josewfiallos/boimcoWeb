@@ -25,7 +25,7 @@
          </li>
          <li>
              <label for="txtTel">Teléfono: </label>
-             <input type="text" name="telefonoUsuario" value="{{telefonoUsuario}}" placeholder="Sin guión ni paréntesis" id="telefonoUsuario" required maxlength="8" onkeypress="return validarTelefono(event)" onpaste="return false" />
+             <input type="text" name="telefonoUsuario" value="{{telefonoUsuario}}" placeholder="Sin guión ni paréntesis" id="telefonoUsuario" required maxlength="12" onkeypress="return validarTelefono(event)" onpaste="return false" />
          </li>
          <li>
           <label for="txtContraseña">Contraseña: </label>

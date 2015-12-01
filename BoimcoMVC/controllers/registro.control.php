@@ -18,7 +18,7 @@ function run(){
   if (isset($_POST["btnRegistrarse"])){
       $lastID = insertarUsuario($_POST);
       if ($lastID) {
-        redirectWithMessage("Usuario Registrado","index.php?page=home");
+        redirectWithMessage("Usuario Registrado Correctamente","index.php?page=home");
       }
   }
 

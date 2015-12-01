@@ -1,4 +1,9 @@
 <title>Sobre Nosotros - Boimco</title>
+<div class="sobreBanner">
+  <p>
+    Sobre Nosotros
+  </p>
+</div>
 <div class="ContentAbout">
   <div class="imagenSobreNososotros"></div>
       <div class="contenedor">

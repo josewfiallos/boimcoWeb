@@ -1,15 +1,23 @@
 <?php
-/* Home Controller
- * 2014-10-14
- * Created By OJBA
- * Last Modification 2014-10-14 20:04
- */
+
   require_once("libs/template_engine.php");
+  require_once("models/productos.model.php");
+
 
   function run(){
-    renderizar("productos",array());
+    $imagen = array();
+    $filtro="";
+
+//APLICAR FILTRO DE BUSQUEDAD CON BOTON!!
+    if (isset($_POST["btnBuscar"])){
+      $filtro = $_POST["txtBuscar"];
+      $imagen = buscarProductos($filtro);
+
+    }else {
+      $imagen = obtenerProductos();
+    }
+//PASAR A DETALE PRODUCTO
+    renderizar("productos",array("imagen"=> $imagen,"buscar"=>$filtro));
   }
-
-
   run();
 ?>

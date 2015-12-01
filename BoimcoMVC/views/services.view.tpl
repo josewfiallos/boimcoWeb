@@ -1,5 +1,9 @@
     <title>Servicios - BoimcoWeb</title>
-<h1>Nuestros Servicios</h1>
+<div class="servicioBanner">
+  <p>
+    Nuestros Servicios
+  </p>
+</div>
 <div class="sContenido">
   <div class="Servicios1">
         <div id="info1">

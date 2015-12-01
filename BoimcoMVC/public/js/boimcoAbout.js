@@ -28,7 +28,7 @@ function cambiarPestanna(pestannas,pestanna) {
         // borde superior del contenido que esta juesto debajo y se vea de este
         // modo que esta seleccionada.
         $(cpestanna).css('display','');
-        $(pestanna).css('background','#ffa800');
+        $(pestanna).css('background','#F44336');
         $(pestanna).css('padding-bottom','2px');
     });
 

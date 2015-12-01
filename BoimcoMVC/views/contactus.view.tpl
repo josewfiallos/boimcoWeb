@@ -31,8 +31,8 @@
          <textarea name="txtMsg" cols="40" rows="6" required  placeholder="Escriba su mensaje"></textarea>
      </li>
       <li>
-        <button class="submit" type="submit">Enviar</button>
-        <button type="reset" name="button">Limpiar</button>
+        <button id="enviar"class="submit" type="submit">Enviar</button>
+        <button id="reset" type="reset" name="button">Limpiar</button>
       </li>
   </ul>
 </form>

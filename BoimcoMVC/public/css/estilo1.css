@@ -248,6 +248,7 @@ body{
   position: absolute;
   background-color: #424242;
   top: 76.3em;
+
   width: 100%;
   height: 13%;
 }
@@ -307,9 +308,28 @@ body{
 
 /* SOBRE NOSOTROS */
 
+
+.sobreBanner{
+  position: relative;
+  bottom: 2.5em;
+  background-color: #424242;
+  padding-top: 0.2em;
+}
+
+.sobreBanner p{
+  color: #fff;
+  text-align: center;
+  position: relative;
+  left: 0.50em;
+  bottom: 0.6em;
+  font-family: "Lato" sans-serif;
+  font-weight: lighter;
+  font-size: 26px;
+}
+
 .ContentAbout .imagenSobreNososotros{
   position: absolute;
-  top: 9.4em;
+  top: 14em;
   width: 100%;
   height: 503px;
   background-color: rgb(0, 0, 0);
@@ -327,9 +347,9 @@ body{
     width: 1090px;
     margin: auto;
     color: black;
-    font-size: 20px;
+    font-size: 14px;
     padding: 20px 15px 50px 50px;
-    top: 20em;
+    top: 35em;
 }
 
 #pestanas {
@@ -348,7 +368,7 @@ body{
     float: left;
     text-align: center;
     margin: 0px 2px -2px -0px;
-    background: #F44336;
+    background: #BDBDBD;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
     border: 2px solid bisque;
@@ -477,32 +497,46 @@ body{
   opacity: 0.8;
 }
 
-.contactForm li button{
+.contactForm #enviar{
   position: relative;
-  width: 100px;
-  height: 40px;
-  left: 18%;
-  top: 2em;
-  margin-left: 2em;
-  background-color: #FFE082;
-  border-color: #FFE082;
-  border-radius: 0.4em;
-  transition: background-color 0.3s linear;
-  -o-transition: background-color 0.3s linear;
-  -moz-transition: background-color 0.3s linear;
-  -webkit-transition: background-color 0.3s linear;
+  margin-left:0px;
+  left: 11.5%;
+  text-align: center;;
+  width: 200px;
+  height: 30px;
+  background:#339cdf;
+  color:#fff;
+  padding:7px 10px 8px 10px;
+  text-shadow:0px -1px #278db8;
+  border:1px solid #339cdf;
+  box-shadow:none;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  margin:0 12px 0 0;
+  cursor:pointer;
+  border-radius: 0.2em;
+  *padding:7px 2px 8px 2px; /* IE7 Fix */
 }
 
-.contactForm li button:hover{
+.contactForm #reset{
   position: relative;
-  width: 100px;
-  height: 40px;
-  left: 18%;
-  top: 2em;
-  margin-left: 2em;
-  background-color: #FFC107;
-  border-color: #FFC107;
-  border-radius: 0.4em;
+  margin-left:0px;
+  left: 11.5%;
+  text-align: center;;
+  width: 200px;
+  height: 30px;
+  background:#F44336;
+  color:#fff;
+  padding:7px 10px 8px 10px;
+  text-shadow:0px -1px #F44336;
+  border:1px solid #F44336;
+  box-shadow:none;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  margin:0 12px 0 0;
+  cursor:pointer;
+  border-radius: 0.2em;
+  *padding:7px 2px 8px 2px; /* IE7 Fix */
 }
 
 /* GALERIA */
@@ -646,18 +680,22 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 
 /* SERVICIOS */
 
-body h1{
+.servicioBanner{
   position: relative;
-  color: #ffffff  ;
-  background-color: #000000;
-  width: 50%;
-  top: 0.5em;
-  left: 25%;
+  bottom: 2.5em;
+  background-color: #424242;
+  padding-top: 0.2em;
+}
+
+.servicioBanner p{
+  color: #fff;
+  text-align: center;
+  position: relative;
+  left: 0.50em;
+  bottom: 0.6em;
   font-family: "Lato" sans-serif;
   font-weight: lighter;
-  font-size: 80px;
-  text-align: center;
-  opacity: 0.8;
+  font-size: 26px;
 }
 
 .Servicios1{
@@ -792,7 +830,7 @@ body h1{
 
 .sContenido{
   position: absolute;
-  top: 300px;
+  top: 50px;
 }
 /*cofecc*/
 .Servicios3{
@@ -1060,15 +1098,15 @@ input:focus {
   position: relative;
   bottom: 2.5em;
   background-color: #424242;
-  padding-top: 1em;
+  padding-top: 0.2em;
 }
 
 .ImgRegistro p{
   color: #fff;
   text-align: center;
   position: relative;
-  left: 0.65em;
-  bottom: 0.9em;
+  left: 0.50em;
+  bottom: 0.6em;
   font-family: "Lato" sans-serif;
   font-weight: lighter;
   font-size: 26px;
@@ -1156,12 +1194,68 @@ padding-right:80px;
 
 .FormRegistro{
 position: absolute;
-left: 37%;
+left: 34%;
 top: 13em;
 background-color: #fff;
 height: 340px;
 max-width: 390px;
 margin-top: 50px;
+padding-left: 3em;
+padding-right: 3em;
 background-color: #EEEEEE;
 border-radius: 0.5em;
+}
+
+/* PRODUCTOS */
+
+.productoBanner{
+  position: relative;
+  bottom: 2.5em;
+  background-color: #424242;
+  padding-top: 0.2em;
+}
+
+.productoBanner p{
+  color: #fff;
+  text-align: center;
+  position: relative;
+  left: 0.50em;
+  bottom: 0.6em;
+  font-family: "Lato" sans-serif;
+  font-weight: lighter;
+  font-size: 26px;
+}
+
+.listadoProductos .produclist{
+  position: relative;
+  bottom: 3em;
+  display:inline-block;
+  margin:0.5em 0.5em 0.5em;
+  float:left;
+  width:13.7em;
+  height:14em;
+  text-align:center;
+  font-size: 13px;
+}
+
+.listadoProductos .produclist p{
+  position: relative;
+    font-family: "Lato" sans-serif;
+    font-weight: bold;
+  bottom: 0.5em;
+  transition: background-color 0.3s linear;
+  -o-transition: background-color 0.3s linear;
+  -moz-transition: background-color 0.3s linear;
+  -webkit-transition: background-color 0.3s linear;
+}
+
+.listadoProductos .produclist a{
+  transition: background-color 0.3s linear;
+  -o-transition: background-color 0.3s linear;
+  -moz-transition: background-color 0.3s linear;
+  -webkit-transition: background-color 0.3s linear;
+}
+
+.listadoProductos .produclist a:hover{
+  background-color: #F44336;
 }

@@ -3,7 +3,7 @@ require_once("libs/dao.php");
 
 function insertarUsuario($usuario){
   if($usuario && is_array($usuario)){
-     $sqlInsert = "INSERT INTO usuarios(`idUsuario`,`correoUsuario`,`contraseniaUsuario`,
+     $sqlInsert = "INSERT INTO usuarios(`correoUsuario`,`contraseniaUsuario`,
      `nameUsuario`,`apellidoUsuario`,`telefonoUsuario`)VALUES('%s','%s','%s','%s','%s');";
 
      $sqlInsert = sprintf($sqlInsert,
