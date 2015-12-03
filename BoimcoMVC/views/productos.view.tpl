@@ -4,6 +4,11 @@
     Productos
   </p>
 </div>
+<form class="formBusqueda" method="post">
+  <label>Busqueda</label>
+  <input type="text" name="buscarTxt">
+  <input type="submit" name="btnBuscar" value="Buscar">
+</form>
 <div class="listadoProductos">
   {{foreach imagen}}
   <div class="produclist">

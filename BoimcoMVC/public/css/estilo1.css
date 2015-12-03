@@ -1303,7 +1303,7 @@ border-radius: 0.5em;
 
 .listadoProductos .produclist{
   position: relative;
-  bottom: 3em;
+  bottom: 1em;
   display:inline-block;
   margin:0.5em 0.5em 0.5em;
   float:left;
@@ -1333,4 +1333,10 @@ border-radius: 0.5em;
 
 .listadoProductos .produclist a:hover{
   background-color: #F44336;
+}
+
+.formBusqueda{
+  position: absolute;
+  top: 14.2em;
+  left: 1em;
 }
