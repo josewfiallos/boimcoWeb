@@ -1303,7 +1303,7 @@ border-radius: 0.5em;
 
 .listadoProductos .produclist{
   position: relative;
-  bottom: 1em;
+  bottom: 0.5em;
   display:inline-block;
   margin:0.5em 0.5em 0.5em;
   float:left;
@@ -1335,8 +1335,64 @@ border-radius: 0.5em;
   background-color: #F44336;
 }
 
+/* Filtro de busquedad Productos */
+
 .formBusqueda{
   position: absolute;
-  top: 14.2em;
+  top: 13em;
   left: 1em;
+}
+
+.formBusqueda ul {
+    width:750px;
+    list-style-type:none;
+	margin:0px;
+	padding:0px;
+}
+
+.formBusqueda li{
+	padding:12px;
+	position:relative;
+
+}
+
+.formBusqueda input {
+  height:20px;
+  width:120px;
+  padding:5px 8px;
+}
+
+.formBusqueda input{
+
+border:1px solid #aaa;
+box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+border-radius:2px;
+color: #000;
+font-size: 12px;
+padding-right:30px;
+-moz-transition: padding .25s;
+-webkit-transition: padding .25s;
+-o-transition: padding .25s;
+transition: padding .25s;
+}
+
+.formBusqueda button {
+position: relative;
+left: 23%;
+bottom: 4.2em;
+text-align: center;;
+width: 100px;
+height: 32px;
+background:#339cdf;
+color:#fff;
+padding:7px 10px 8px 10px;
+text-shadow:0px -1px #278db8;
+border:1px solid #339cdf;
+box-shadow:none;
+-moz-box-shadow:none;
+-webkit-box-shadow:none;
+margin:0 12px 0 0;
+cursor:pointer;
+border-radius: 0.2em;
+*padding:7px 2px 8px 2px; /* IE7 Fix */
 }

@@ -14,4 +14,14 @@ function obtenerProductos(){
   $producto= obtenerRegistros($selectQuery);
   return $producto;
 }
+
+function buscarProductos($filtro){
+  $producto= array();
+  $selectQuery="SELECT * FROM productos where nombreProducto like '%$filtro%' and estadoProducto='ACT' AND cantidadProducto>0;";
+
+
+  $producto= obtenerRegistros($selectQuery);
+  return $producto;
+}
+
 ?>

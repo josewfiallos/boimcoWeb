@@ -11,10 +11,13 @@
 
 //APLICAR FILTRO DE BUSQUEDAD CON BOTON!!
     if (isset($_POST["btnBuscar"])){
-      $filtro = $_POST["txtBuscar"];
+      $filtro = $_POST["buscarTxt"];
       $imagen = buscarProductos($filtro);
 
-    }else {
+    }else if(isset($_POST["btnTodos"])) {
+      $imagen = obtenerProductos();
+    }
+    else {
       $imagen = obtenerProductos();
     }
 

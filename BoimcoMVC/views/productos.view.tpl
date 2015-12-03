@@ -5,9 +5,14 @@
   </p>
 </div>
 <form class="formBusqueda" method="post">
-  <label>Busqueda</label>
-  <input type="text" name="buscarTxt">
-  <input type="submit" name="btnBuscar" value="Buscar">
+<ul>
+  <li>
+    <input type="text" name="buscarTxt">
+  </li>
+  <li>
+    <button type="submit" name="btnBuscar">Buscar</button>
+  </li>
+</ul>
 </form>
 <div class="listadoProductos">
   {{foreach imagen}}
