@@ -13,7 +13,7 @@
       <ul>
          <li>
              <label for="txtName">Nombre: </label>
-             <input type="text" name="nombreUsuario" value="{{nombreUsuario}}" id="nombreUsuario" placeholder="Primer Nombre" maxlength="15" required />
+               <input type="text" name="nombreUsuario" value="{{nombreUsuario}}" id="nombreUsuario" placeholder="Primer Nombre" maxlength="15" required />
          </li>
          <li>
            <label for="txtApellido">Apellido: </label>

@@ -1,5 +1,10 @@
     <title>Contactanos - BoimcoWeb</title>
 </script>
+<div class="contactBanner">
+  <p>
+    Contáctanos
+  </p>
+</div>
 <div class="form">
   <form class="contactForm" method="post">
   <ul>
@@ -39,6 +44,4 @@
 
 </div>
 
-<div class="contactImg"><p>
-  Contáctanos
-</p></div>
+<div class="contactImg"></div>

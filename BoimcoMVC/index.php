@@ -14,6 +14,12 @@
     //Siempre
     require_once("controllers/verificar.mw.php");
     require_once("controllers/site.mw.php");
+
+    if(isset($_SESSION["userRol"])){
+      mw_estaLogueado($_SESSION["userRol"]);
+    }else{
+      mw_estaLogueado("");
+    }
     //Este switch se encarga de todo el enrutamiento
 
     switch($pageRequest){

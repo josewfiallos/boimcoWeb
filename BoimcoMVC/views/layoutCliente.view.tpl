@@ -14,25 +14,11 @@
   <body>
         <!-- Login Starts Here -->
         <div id="loginContainer">
-            <a href="#" id="loginButton"><span>Log in</span><em></em></a>
-            <a href="index.php?page=registro" id="signUpButton"><span>Sign Up</span><em></em></a>
+            <a href="#" id="perfilButton"><span>{{userName}}</span><em></em></a>
+            <form method="post">
+              <button id="signOutButton" type="submit" name="btnSignOut">Sign Out</button>
+            </form>
             <div style="clear:both"></div>
-            <div id="loginBox">
-                <form id="loginForm" method="post">
-                    <fieldset id="body">
-                        <fieldset>
-                            <label for="email">Correo Electronico</label>
-                            <input type="email" name="email" id="email" />
-                        </fieldset>
-                        <fieldset>
-                            <label for="password">Contraseña</label>
-                            <input type="password" name="password" id="password" />
-                        </fieldset>
-                        <input type="submit" name="btnLogin" id="login" value="Sign in" />
-                    </fieldset>
-                    <span><a href="#">Forgot your password?</a></span>
-                </form>
-            </div>
         </div>
         <!-- Login Ends Here -->
     <div class="HomeHeader">

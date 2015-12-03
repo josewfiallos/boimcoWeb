@@ -12,6 +12,9 @@
         //union de variables de sessión
         $datos = array_merge($_SESSION, $datos);
 
+        if(isset($global_context['layoutFile'])){
+          $layoutFile=$global_context['layoutFile'];
+        }
 
         $viewsPath = "views/";
         $fileTemplate = $vista.".view.tpl";

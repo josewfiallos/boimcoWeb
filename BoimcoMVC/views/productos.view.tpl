@@ -12,7 +12,7 @@
   <p>
     {{nombreProducto}}
   <br>
-    Precio: L {{precioUnitProducto}}
+    Precio: L {{precioUnitarioProducto}}
   </p>
   </form>
   </div>

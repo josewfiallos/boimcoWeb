@@ -1,8 +1,13 @@
 <?php
 //middleware de verificación
 
-    function mw_estaLogueado(){
+    function mw_estaLogueado($rol){
         if( isset($_SESSION["userLogged"]) && $_SESSION["userLogged"] == true){
+          if ($rol=='CLT') {
+            addToContext("layoutFile","layoutCliente.view.tpl");
+          }
+          else {
+          }
           return true;
         }else{
           $_SESSION["userLogged"] = false;
@@ -10,13 +15,16 @@
           return false;
         }
     }
-    function mw_setEstaLogueado($usuario, $logueado){
+
+    function mw_setEstaLogueado($usuario, $logueado, $rol){
         if($logueado){
             $_SESSION["userLogged"] = true;
             $_SESSION["userName"] = $usuario;
+            $_SESSION["userRol"] = $rol;
         }else{
-            $_SESSION["userLogged"] = false;
-            $_SESSION["userName"] = "";
+          $_SESSION["userLogged"] = false;
+          unset($_SESSION["userName"]);
+          unset($_SESSION["userRol"]);
         }
     }
     function mw_redirectToLogin($to){

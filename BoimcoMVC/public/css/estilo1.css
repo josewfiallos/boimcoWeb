@@ -1,5 +1,5 @@
 body{
-  font-family: "Lato" sans-serif;
+  font-family: "Lato";
   font-size:16px;
   font-size: 100%;
   font-size: 1em;
@@ -320,7 +320,7 @@ body{
   color: #fff;
   text-align: center;
   position: relative;
-  left: 0.50em;
+  padding-left: 1em;
   bottom: 0.6em;
   font-family: "Lato" sans-serif;
   font-weight: lighter;
@@ -471,10 +471,10 @@ body{
 }
 
 .contactImg{
-  position: absolute;
-  top: 9.4em;
+  position: relative;
+  bottom: 4.15em;
   width: 100%;
-  height: 487px;
+  height: 433px;
   background-color: rgb(0, 0, 0);
   background-image: url("../imgs/contacus.jpg");
   background-repeat: no-repeat;
@@ -485,16 +485,22 @@ body{
   -webkit-transition: background-image 0.3s linear;
 }
 
-.contactImg p{
+.contactBanner{
   position: relative;
-  color: #ffffff  ;
-  background-color: #000000;
+  bottom: 2.5em;
+  background-color: #424242;
+  padding-top: 0.2em;
+}
+
+.contactBanner p{
+  color: #fff;
+  text-align: center;
+  position: relative;
+  padding-left: 1em;
+  bottom: 0.6em;
   font-family: "Lato" sans-serif;
   font-weight: lighter;
-  font-size: 100px;
-  text-align: center;
-  top: 2.8em;
-  opacity: 0.8;
+  font-size: 26px;
 }
 
 .contactForm #enviar{
@@ -691,7 +697,7 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
   color: #fff;
   text-align: center;
   position: relative;
-  left: 0.50em;
+  padding-left: 1em;
   bottom: 0.6em;
   font-family: "Lato" sans-serif;
   font-weight: lighter;
@@ -941,6 +947,10 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
     position:relative;
     z-index:30;
     cursor:pointer;
+    transition: background 0.3s linear;
+    -o-transition: background 0.3s linear;
+    -moz-transition: background 0.3s linear;
+    -webkit-transition: background 0.3s linear;
 }
 
 /* Login Button Text */
@@ -968,6 +978,10 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
     position:relative;
     z-index:30;
     cursor:pointer;
+    transition: background 0.3s linear;
+    -o-transition: background 0.3s linear;
+    -moz-transition: background 0.3s linear;
+    -webkit-transition: background 0.3s linear;
 }
 
 /* Signup Button Text */
@@ -1092,6 +1106,67 @@ input:focus {
     outline:none;
 }
 
+/* LAYOUT 2 - BUTTON SIGN OUT */
+
+#perfilButton {
+  font-family: "Lato";
+    display:inline-block;
+    float:right;
+    right: 7.3em;
+    top: 1em;
+    background:#E0E0E0;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    position:relative;
+    z-index:30;
+    cursor:pointer;
+    transition: background 0.3s linear;
+    -o-transition: background 0.3s linear;
+    -moz-transition: background 0.3s linear;
+    -webkit-transition: background 0.3s linear;
+}
+
+/* Profile Button Text */
+#perfilButton span {
+    color:#445058;
+    font-size:14px;
+    padding:7px 20px 9px 16px;
+    display:block
+}
+
+#perfilButton:hover {
+    background:#BDBDBD
+}
+
+#loginContainer button {
+font-family: "Lato";
+position: fixed;
+top: 14.5px;
+right: 0.5em;
+text-align: center;;
+width: 90px;
+height: 31.5px;
+background:#E0E0E0;
+color:#445058;
+padding:7px 10px 8px 10px;
+border:1px;
+box-shadow:none;
+-moz-box-shadow:none;
+-webkit-box-shadow:none;
+cursor:pointer;
+border-radius: 0.2em;
+*padding:7px 2px 8px 2px; /* IE7 Fix */
+transition: background 0.3s linear;
+-o-transition: background 0.3s linear;
+-moz-transition: background 0.3s linear;
+-webkit-transition: background 0.3s linear;
+}
+
+#loginContainer button:hover{
+  background:#BDBDBD;
+}
+
+
 /* REGISTRO */
 
 .ImgRegistro{
@@ -1105,7 +1180,7 @@ input:focus {
   color: #fff;
   text-align: center;
   position: relative;
-  left: 0.50em;
+  padding-left: 1em;
   bottom: 0.6em;
   font-family: "Lato" sans-serif;
   font-weight: lighter;
@@ -1219,7 +1294,7 @@ border-radius: 0.5em;
   color: #fff;
   text-align: center;
   position: relative;
-  left: 0.50em;
+  padding-left: 1em;
   bottom: 0.6em;
   font-family: "Lato" sans-serif;
   font-weight: lighter;
