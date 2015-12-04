@@ -45,6 +45,9 @@
         case "productos":
             require_once("controllers/productos.control.php");
             break;
+        case 'perfil':
+            require_once("controllers/perfil.control.php");
+          break;
         // case "althome":
         //     require_once("controllers/althome.control.php");
         //     break;

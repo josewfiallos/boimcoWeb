@@ -1140,7 +1140,7 @@ input:focus {
 
 #loginContainer button {
 font-family: "Lato";
-position: fixed;
+position: absolute;
 top: 14.5px;
 right: 0.5em;
 text-align: center;;
@@ -1395,4 +1395,22 @@ margin:0 12px 0 0;
 cursor:pointer;
 border-radius: 0.2em;
 *padding:7px 2px 8px 2px; /* IE7 Fix */
+}
+
+.perfilBanner{
+  position: relative;
+  bottom: 2.5em;
+  background-color: #424242;
+  padding-top: 0.2em;
+}
+
+.perfilBanner p{
+  color: #fff;
+  text-align: center;
+  position: relative;
+  padding-left: 1em;
+  bottom: 0.6em;
+  font-family: "Lato" sans-serif;
+  font-weight: lighter;
+  font-size: 26px;
 }

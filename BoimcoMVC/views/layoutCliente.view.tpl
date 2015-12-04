@@ -14,7 +14,7 @@
   <body>
         <!-- Login Starts Here -->
         <div id="loginContainer">
-            <a href="#" id="perfilButton"><span>{{userName}}</span><em></em></a>
+            <a href="index.php?page=perfil" id="perfilButton"><span>{{userName}}</span><em></em></a>
             <form method="post">
               <button id="signOutButton" type="submit" name="btnSignOut">Sign Out</button>
             </form>
