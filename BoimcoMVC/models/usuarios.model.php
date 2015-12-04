@@ -35,4 +35,11 @@
       return $cliente;
     }
 
+    function modificarCliente($registro,$idCliente){
+      $query = "UPDATE clientes SET primerNombreCliente='%s', segundoNombreCliente='%s', primerApellidoCliente='%s', segundoApellidoCliente='%s', direccionCliente='%s',
+      telefonoCliente='%d' WHERE idCliente='%d';";
+      $query = sprintf($query,$registro["nuevoPrimerNombre"],$registro["nuevoSegundoNombre"],$registro["nuevoPrimerApellido"],$registro["nuevoSegundoApellido"],
+      $registro["nuevaDireccion"],$registro["nuevoTelefono"],$idCliente);
+      return ejecutarNonQuery($query);
+    }
 ?>

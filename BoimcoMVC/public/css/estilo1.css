@@ -1093,13 +1093,13 @@ fieldset#body {
 #loginForm span {
     text-align:center;
     display:block;
-    padding:7px 0 4px 0;
+    padding:5px 0 4px 0;
 }
 
-#loginForm span a {
+#loginForm a {
     color:#3a454d;
     text-shadow:1px 1px #fff;
-    font-size:12px;
+    font-size:14px;
 }
 
 input:focus {
@@ -1413,4 +1413,87 @@ border-radius: 0.2em;
   font-family: "Lato" sans-serif;
   font-weight: lighter;
   font-size: 26px;
+}
+
+/* PERFIL FORMULARIO*/
+
+.formActualizarUsuario{
+  position: absolute;
+  left: 32%;
+  top: 12em;
+  height: 340px;
+  max-width: 390px;
+  margin-top: 50px;
+  padding-left: 3em;
+  padding-right: 3em;
+  background-color: #EEEEEE;
+  border-radius: 0.5em;
+}
+
+.formActualizarUsuario label{
+  font-family: "Lato";
+  font-weight: normal;
+  font-size: 13px;
+  color: #212121;
+}
+
+.formActualizarUsuario ul {
+    width:750px;
+    list-style-type:none;
+	margin:0px;
+  margin-top: 1.2em;
+  margin-left: 1em;
+	padding:0px;
+}
+
+.formActualizarUsuario li{
+	padding:12px;
+	position:relative;
+}
+
+.formActualizarUsuario input {
+position: absolute;
+  height:20px;
+  width:160px;
+  padding:5px 8px;
+  display: block;
+  left: 10em;
+  bottom: 0.3em;
+}
+
+.formActualizarUsuario input{
+
+border:1px solid #aaa;
+box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+border-radius:2px;
+color: #000;
+font-family: "Lato";
+font-size: 14px;
+padding-right:30px;
+-moz-transition: padding .25s;
+-webkit-transition: padding .25s;
+-o-transition: padding .25s;
+transition: padding .25s;
+}
+
+.formActualizarUsuario button {
+position: relative;
+font-family: "Lato";
+left: 15%;
+top: 0.2em;
+text-align: center;;
+width: 120px;
+height: 32px;
+background:#339cdf;
+color:#fff;
+padding:7px 10px 8px 10px;
+text-shadow:0px -1px #278db8;
+border:1px solid #339cdf;
+box-shadow:none;
+-moz-box-shadow:none;
+-webkit-box-shadow:none;
+margin:0 12px 0 0;
+cursor:pointer;
+border-radius: 0.2em;
+*padding:7px 2px 8px 2px; /* IE7 Fix */
 }

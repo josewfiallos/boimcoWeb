@@ -9,7 +9,7 @@ $(function() {
         box.toggle();
         button.toggleClass('active');
     });
-    form.mouseup(function() { 
+    form.mouseup(function() {
         return false;
     });
     $(this).mouseup(function(login) {

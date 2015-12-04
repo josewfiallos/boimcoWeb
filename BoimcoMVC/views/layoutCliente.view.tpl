@@ -14,11 +14,19 @@
   <body>
         <!-- Login Starts Here -->
         <div id="loginContainer">
-            <a href="index.php?page=perfil" id="perfilButton"><span>{{userName}}</span><em></em></a>
+            <a href="#" id="loginButton"><span>{{userName}}</span><em></em></a>
             <form method="post">
               <button id="signOutButton" type="submit" name="btnSignOut">Sign Out</button>
             </form>
             <div style="clear:both"></div>
+            <div id="loginBox">
+                <form id="loginForm" method="post">
+                    <fieldset id="body">
+                      <a href="index.php?page=perfil"><span>Cuenta</span></a>
+                      <a href="#"><span>Registro de Compras</span></a>
+                    </fieldset>
+                </form>
+            </div>
         </div>
         <!-- Login Ends Here -->
     <div class="HomeHeader">
