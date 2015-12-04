@@ -1,5 +1,5 @@
     <title>Servicios - BoimcoWeb</title>
-<div class="servicioBanner">
+<div class="bannerGeneral">
   <p>
     Nuestros Servicios
   </p>

@@ -1,4 +1,4 @@
-<div class="perfilBanner">
+<div class="bannerGeneral">
   <p>
     Hola, {{primerNombreCliente}} {{primerApellidoCliente}}
   </p>

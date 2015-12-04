@@ -7,6 +7,26 @@ body{
   padding: 0px;
 }
 
+ /* BANNER INFORMACION */
+
+ .bannerGeneral{
+   position: relative;
+   bottom: 2.5em;
+   background-color: #424242;
+   padding-top: 0.2em;
+ }
+
+ .bannerGeneral p{
+   color: #fff;
+   text-align: center;
+   position: relative;
+   padding-left: 1em;
+   bottom: 0.6em;
+   font-family: "Lato" sans-serif;
+   font-weight: lighter;
+   font-size: 26px;
+ }
+
 /* INICIO */
 
 .HomeHeader{
@@ -308,25 +328,6 @@ body{
 
 /* SOBRE NOSOTROS */
 
-
-.sobreBanner{
-  position: relative;
-  bottom: 2.5em;
-  background-color: #424242;
-  padding-top: 0.2em;
-}
-
-.sobreBanner p{
-  color: #fff;
-  text-align: center;
-  position: relative;
-  padding-left: 1em;
-  bottom: 0.6em;
-  font-family: "Lato" sans-serif;
-  font-weight: lighter;
-  font-size: 26px;
-}
-
 .ContentAbout .imagenSobreNososotros{
   position: absolute;
   top: 14em;
@@ -483,24 +484,6 @@ body{
   -o-transition: background-image 0.3s linear;
   -moz-transition: background-image 0.3s linear;
   -webkit-transition: background-image 0.3s linear;
-}
-
-.contactBanner{
-  position: relative;
-  bottom: 2.5em;
-  background-color: #424242;
-  padding-top: 0.2em;
-}
-
-.contactBanner p{
-  color: #fff;
-  text-align: center;
-  position: relative;
-  padding-left: 1em;
-  bottom: 0.6em;
-  font-family: "Lato" sans-serif;
-  font-weight: lighter;
-  font-size: 26px;
 }
 
 .contactForm #enviar{
@@ -685,24 +668,6 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 }
 
 /* SERVICIOS */
-
-.servicioBanner{
-  position: relative;
-  bottom: 2.5em;
-  background-color: #424242;
-  padding-top: 0.2em;
-}
-
-.servicioBanner p{
-  color: #fff;
-  text-align: center;
-  position: relative;
-  padding-left: 1em;
-  bottom: 0.6em;
-  font-family: "Lato" sans-serif;
-  font-weight: lighter;
-  font-size: 26px;
-}
 
 .Servicios1{
   position: relative;
@@ -1052,6 +1017,8 @@ fieldset#body {
 }
 
 #loginForm #body fieldset label {
+    font-family: "Lato";
+    font-size: 13px;
     display:block;
     float:none;
     margin:0 0 6px 0;
@@ -1059,12 +1026,13 @@ fieldset#body {
 
 /* Default Input */
 #loginForm input {
+    font-family: "Lato";
+    font-size: 13px;
     width:92%;
     border:1px solid #899caa;
     border-radius:3px;
     -moz-border-radius:3px;
     color:#3a454d;
-    font-weight:bold;
     padding:8px 8px;
     box-shadow:inset 0px 1px 3px #bbb;
     -webkit-box-shadow:inset 0px 1px 3px #bbb;
@@ -1166,64 +1134,106 @@ transition: background 0.3s linear;
   background:#BDBDBD;
 }
 
+/* LAYOUT BUTTON CARRITO */
+
+#scButton {
+    display:inline-block;
+    float:right;
+    right: 7.65em;
+    top: 1.02em;
+    height: 33px;
+    background:#E0E0E0;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    position:relative;
+    z-index:30;
+    cursor:pointer;
+    transition: background 0.3s linear;
+    -o-transition: background 0.3s linear;
+    -moz-transition: background 0.3s linear;
+    -webkit-transition: background 0.3s linear;
+}
+
+/* Login Button Text */
+#scButton span {
+    color:#445058;
+    font-size:14px;
+    padding:7px 20px 9px 16px;
+    display:block
+}
+
+#scButton:hover {
+    background:#BDBDBD
+}
 
 /* REGISTRO */
 
-.ImgRegistro{
-  position: relative;
-  bottom: 2.5em;
-  background-color: #424242;
-  padding-top: 0.2em;
+.FormRegistro{
+  position: absolute;
+  left: 32%;
+  top: 12em;
+  height: 340px;
+  max-width: 390px;
+  margin-top: 50px;
+  padding-left: 3em;
+  padding-right: 4.5em;
+  background-color: #EEEEEE;
+  border-radius: 0.5em;
 }
 
-.ImgRegistro p{
-  color: #fff;
-  text-align: center;
-  position: relative;
-  padding-left: 1em;
-  bottom: 0.6em;
-  font-family: "Lato" sans-serif;
-  font-weight: lighter;
-  font-size: 26px;
-}
-
-.FormRegistro label {
-    color: #555555;
-    display: inline-block;
-    float: left;
-    font-size: 15px;
-    font-weight: bold;
-    margin-top: 3px;
-    padding: 3px;
-    width: 90px;
+.FormRegistro label{
+  font-family: "Lato";
+  font-weight: normal;
+  font-size: 13px;
+  color: #212121;
 }
 
 .FormRegistro ul {
     width:750px;
     list-style-type:none;
 	margin:0px;
+  margin-top: 1.2em;
+  margin-left: 1em;
 	padding:0px;
 }
 
 .FormRegistro li{
 	padding:12px;
 	position:relative;
-
 }
 
 .FormRegistro input {
+position: absolute;
   height:20px;
-  width:220px;
+  width:190px;
   padding:5px 8px;
+  display: block;
+  left: 11em;
+  bottom: 0.3em;
+}
+
+.FormRegistro input{
+border:1px solid #aaa;
+box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+border-radius:2px;
+color: #000;
+font-family: "Lato";
+font-size: 13px;
+padding-right:30px;
+-moz-transition: padding .25s;
+-webkit-transition: padding .25s;
+-o-transition: padding .25s;
+transition: padding .25s;
 }
 
 .FormRegistro button {
 position: relative;
-margin-left:0px;
-left: 11.5%;
+font-family: "Lato";
+left: 17%;
+top: 1.5em;
 text-align: center;;
-width: 200px;
-height: 30px;
+width: 120px;
+height: 32px;
 background:#339cdf;
 color:#fff;
 padding:7px 10px 8px 10px;
@@ -1238,68 +1248,7 @@ border-radius: 0.2em;
 *padding:7px 2px 8px 2px; /* IE7 Fix */
 }
 
-.FormRegistro input:required:valid, .FormRegistro textarea:required:valid {
-box-shadow: 0 0 5px #099c18;
-border-color: #23e30b;
-}
-.FormRegistro input:focus:invalid, .FormRegistro textarea:focus:invalid {
-box-shadow: 0 0 5px #c92d2d;
-border-color: #f10e0e;
-}
-
-.FormRegistro input, .FormRegistro textarea {
-border:1px solid #aaa;
-box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
-border-radius:2px;
-color: #000;
-font-size: 12px;
-padding-right:30px;
--moz-transition: padding .25s;
--webkit-transition: padding .25s;
--o-transition: padding .25s;
-transition: padding .25s;
-}
-
-.FormRegistro input:focus, .FormRegistro textarea:focus {
-background: #fff;
-border:1px solid #413f3f;
-box-shadow: 0 0 3px #aaa;
-padding-right:80px;
-}
-
-.FormRegistro{
-position: absolute;
-left: 34%;
-top: 13em;
-background-color: #fff;
-height: 340px;
-max-width: 390px;
-margin-top: 50px;
-padding-left: 3em;
-padding-right: 3em;
-background-color: #EEEEEE;
-border-radius: 0.5em;
-}
-
 /* PRODUCTOS */
-
-.productoBanner{
-  position: relative;
-  bottom: 2.5em;
-  background-color: #424242;
-  padding-top: 0.2em;
-}
-
-.productoBanner p{
-  color: #fff;
-  text-align: center;
-  position: relative;
-  padding-left: 1em;
-  bottom: 0.6em;
-  font-family: "Lato" sans-serif;
-  font-weight: lighter;
-  font-size: 26px;
-}
 
 .listadoProductos .produclist{
   position: relative;
@@ -1357,6 +1306,7 @@ border-radius: 0.5em;
 }
 
 .formBusqueda input {
+  font-family: "Lato";
   height:20px;
   width:120px;
   padding:5px 8px;
@@ -1378,6 +1328,7 @@ transition: padding .25s;
 
 .formBusqueda button {
 position: relative;
+  font-family: "Lato";
 left: 23%;
 bottom: 4.2em;
 text-align: center;;
@@ -1397,35 +1348,17 @@ border-radius: 0.2em;
 *padding:7px 2px 8px 2px; /* IE7 Fix */
 }
 
-.perfilBanner{
-  position: relative;
-  bottom: 2.5em;
-  background-color: #424242;
-  padding-top: 0.2em;
-}
-
-.perfilBanner p{
-  color: #fff;
-  text-align: center;
-  position: relative;
-  padding-left: 1em;
-  bottom: 0.6em;
-  font-family: "Lato" sans-serif;
-  font-weight: lighter;
-  font-size: 26px;
-}
-
 /* PERFIL FORMULARIO*/
 
 .formActualizarUsuario{
   position: absolute;
   left: 32%;
   top: 12em;
-  height: 340px;
+  height: 350px;
   max-width: 390px;
   margin-top: 50px;
   padding-left: 3em;
-  padding-right: 3em;
+  padding-right: 3.5em;
   background-color: #EEEEEE;
   border-radius: 0.5em;
 }

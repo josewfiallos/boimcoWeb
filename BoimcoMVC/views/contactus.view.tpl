@@ -1,6 +1,6 @@
     <title>Contactanos - BoimcoWeb</title>
 </script>
-<div class="contactBanner">
+<div class="bannerGeneral">
   <p>
     Contáctanos
   </p>

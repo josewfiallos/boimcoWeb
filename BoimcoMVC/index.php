@@ -48,6 +48,12 @@
         case 'perfil':
             require_once("controllers/perfil.control.php");
           break;
+        case 'carrito':
+            require_once("controllers/carrito.control.php");
+          break;
+        case 'compras':
+            require_once("controllers/compras.control.php");
+          break;
         // case "althome":
         //     require_once("controllers/althome.control.php");
         //     break;

@@ -1,5 +1,5 @@
 <title>Productos - BoimcoWeb</title>
-<div class="productoBanner">
+<div class="bannerGeneral">
   <p>
     Productos
   </p>

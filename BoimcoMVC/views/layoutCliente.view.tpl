@@ -15,6 +15,7 @@
         <!-- Login Starts Here -->
         <div id="loginContainer">
             <a href="#" id="loginButton"><span>{{userName}}</span><em></em></a>
+            <a href="index.php?page=carrito" id="scButton"><span><img src="public/imgs/sc.png" width=20px height=20px/></span><em></em></a>
             <form method="post">
               <button id="signOutButton" type="submit" name="btnSignOut">Sign Out</button>
             </form>
@@ -23,7 +24,7 @@
                 <form id="loginForm" method="post">
                     <fieldset id="body">
                       <a href="index.php?page=perfil"><span>Cuenta</span></a>
-                      <a href="#"><span>Registro de Compras</span></a>
+                      <a href="index.php?page=compras"><span>Registro de Compras</span></a>
                     </fieldset>
                 </form>
             </div>

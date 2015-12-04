@@ -1,5 +1,5 @@
 <title>Sobre Nosotros - Boimco</title>
-<div class="sobreBanner">
+<div class="bannerGeneral">
   <p>
     Sobre Nosotros
   </p>

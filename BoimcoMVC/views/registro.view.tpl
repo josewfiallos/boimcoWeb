@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Registro - BoimcoWeb</title>
   </head>
-  <div class="ImgRegistro"><p>
+  <div class="bannerGeneral"><p>
     Registro
   </p></div>
   <body>
