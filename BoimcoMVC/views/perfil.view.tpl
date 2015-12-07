@@ -30,6 +30,7 @@
         <input type="text" name="nuevoTelefono" value={{telefonoCliente}}>
       </li>
       <li>
+        <button id="btnINA" type="submit" name="btnDesactivar">Desactivar Cuenta</button>
         <button type="submit" name="btnModificar">Actualizar Datos</button>
       </li>
     </ul>

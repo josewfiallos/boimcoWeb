@@ -46,10 +46,6 @@ function run(){
   }
 }
 
-if (isset($_POST["btnSignOut"])) {
-  mw_setEstaLogueado("", false, "");
-  redirectWithMessage("Saliendo","index.php?page=registro");
-}
 
   renderizar("registro",$htmlRegistro);
 }

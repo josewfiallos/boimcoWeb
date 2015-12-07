@@ -7,6 +7,7 @@
             addToContext("layoutFile","layoutCliente.view.tpl");
           }
           else {
+            addToContext("layoutFile","layoutAdministrador.view.tpl");
           }
           return true;
         }else{

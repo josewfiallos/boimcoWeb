@@ -9,6 +9,12 @@
     $idUsuario = $usuario["idUsuario"];
     $cliente = obtenerCliente($idUsuario);
 
+    if (isset($_POST["btnDesactivar"])) {
+        desavilitarUsuario($idUsuario);
+        mw_setEstaLogueado("", false, "");
+        redirectWithMessage("Usuario Inavilitado","index.php?page=home");
+    }
+
     if (isset($_POST["btnSignOut"])) {
       mw_setEstaLogueado("", false, "");
       redirectWithMessage("Saliendo","index.php?page=home");
@@ -17,7 +23,7 @@
     if (isset($_POST["btnModificar"])) {
       //VALIDACIONES AQUI
       if (modificarCliente($_POST,$cliente["idCliente"])){
-      redirectWithMessage("Perfil Actualizado","index.php?page=perfil");
+      redirectWithMessage("Perfil Actualizado","index.php?page=home");
       }
 }
     renderizar("perfil",$cliente);

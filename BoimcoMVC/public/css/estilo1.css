@@ -1037,7 +1037,7 @@ fieldset#body {
     box-shadow:inset 0px 1px 3px #bbb;
     -webkit-box-shadow:inset 0px 1px 3px #bbb;
     -moz-box-shadow:inset 0px 1px 3px #bbb;
-    font-size:12px;
+
 }
 
 /* Sign In Button */
@@ -1284,6 +1284,69 @@ border-radius: 0.2em;
   background-color: #F44336;
 }
 
+/* Administrador Listado Productos */
+
+
+.listadoProductos .produclistAdmin{
+  position: relative;
+  bottom: 0.5em;
+  margin:0.5em 0.5em 0.5em;
+  float:left;
+  width:19.5em;
+  height:19.5em;
+  text-align:center;
+  font-size: 13px;
+}
+
+.listadoProductos .produclistAdmin p{
+  position: relative;
+  font-family: "Lato" sans-serif;
+  font-weight: bold;
+  bottom: 0.5em;
+  right: 6em;
+  margin-top: 1em;
+  transition: background-color 0.3s linear;
+  -o-transition: background-color 0.3s linear;
+  -moz-transition: background-color 0.3s linear;
+  -webkit-transition: background-color 0.3s linear;
+}
+
+.listadoProductos .produclistAdmin input{
+  width: 140px;
+  position: absolute;
+  left: 13.5em;
+  text-align: center;
+  border:1px solid #aaa;
+  box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+  border-radius:1px;
+  color: #000;
+  font-size: 12px;
+}
+
+.listadoProductos .produclistAdmin button {
+position: relative;
+font-family: "Lato";
+bottom: 0.7em;
+left: 56%;
+font-size: 13px;
+text-align: center;;
+width: 80px;
+height: 30px;
+background:#339cdf;
+color:#fff;
+padding:7px 10px 8px 10px;
+text-shadow:0px -1px #278db8;
+border:1px solid #339cdf;
+box-shadow:none;
+-moz-box-shadow:none;
+-webkit-box-shadow:none;
+margin:0 12px 0 0;
+cursor:pointer;
+border-radius: 0.2em;
+*padding:7px 2px 8px 2px; /* IE7 Fix */
+}
+
+
 /* Filtro de busquedad Productos */
 
 .formBusqueda{
@@ -1333,6 +1396,28 @@ left: 23%;
 bottom: 4.2em;
 text-align: center;;
 width: 100px;
+height: 32px;
+background:#339cdf;
+color:#fff;
+padding:7px 10px 8px 10px;
+text-shadow:0px -1px #278db8;
+border:1px solid #339cdf;
+box-shadow:none;
+-moz-box-shadow:none;
+-webkit-box-shadow:none;
+margin:0 12px 0 0;
+cursor:pointer;
+border-radius: 0.2em;
+*padding:7px 2px 8px 2px; /* IE7 Fix */
+}
+
+.formBusqueda #boton2 {
+position: relative;
+  font-family: "Lato";
+left: 38%;
+bottom: 7.5em;
+text-align: center;;
+width: 150px;
 height: 32px;
 background:#339cdf;
 color:#fff;
@@ -1409,10 +1494,16 @@ padding-right:30px;
 transition: padding .25s;
 }
 
+.formActualizarUsuario #btnINA{
+  width: 140px;
+  background: #F44336;
+  border:1px solid #F44336;
+}
+
 .formActualizarUsuario button {
 position: relative;
 font-family: "Lato";
-left: 15%;
+left: 4.5%;
 top: 0.2em;
 text-align: center;;
 width: 120px;
@@ -1420,7 +1511,6 @@ height: 32px;
 background:#339cdf;
 color:#fff;
 padding:7px 10px 8px 10px;
-text-shadow:0px -1px #278db8;
 border:1px solid #339cdf;
 box-shadow:none;
 -moz-box-shadow:none;

@@ -9,15 +9,10 @@
     $imagen = array();
     $filtro="";
 
-//APLICAR FILTRO DE BUSQUEDAD CON BOTON!!
     if (isset($_POST["btnBuscar"])){
       $filtro = $_POST["buscarTxt"];
       $imagen = buscarProductos($filtro);
-
-    }else if(isset($_POST["btnTodos"])) {
-      $imagen = obtenerProductos();
-    }
-    else {
+    }else{
       $imagen = obtenerProductos();
     }
 
@@ -29,7 +24,12 @@
         if (compararDatos($correo,$Contrasenia)){
           $rol = obtenerRol($correo);
           mw_setEstaLogueado($correo,true,$rol);
-            redirectWithMessage("Ingresando","index.php?page=productos");
+          if ($rol=='CLT') {
+          redirectWithMessage("Ingresando","index.php?page=productos");
+          }
+          else {
+          redirectWithMessage("Ingresando","index.php?page=productosAdmin");
+          }
         }
         else{
           $errores[] = array("errmsg"=>"Usuario o Contraseña Incorrecta");

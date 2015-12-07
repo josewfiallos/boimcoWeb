@@ -54,6 +54,9 @@
         case 'compras':
             require_once("controllers/compras.control.php");
           break;
+        case 'productosAdmin':
+            require_once("controllers/productosAdmin.control.php");
+        break;
         // case "althome":
         //     require_once("controllers/althome.control.php");
         //     break;

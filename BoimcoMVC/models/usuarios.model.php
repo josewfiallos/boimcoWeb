@@ -42,4 +42,11 @@
       $registro["nuevaDireccion"],$registro["nuevoTelefono"],$idCliente);
       return ejecutarNonQuery($query);
     }
+
+    function desavilitarUsuario($id){
+      $estado="INA";
+      $query = "UPDATE usuarios SET estadoUsuario='%s' WHERE idUsuario='%d';";
+      $query = sprintf($query,$estado,$id);
+      return ejecutarNonQuery($query);
+    }
 ?>
