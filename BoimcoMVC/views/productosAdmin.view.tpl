@@ -23,15 +23,18 @@
   <p>
     <label>Producto:</label>
     <input type="text" name="modNombreProducto" value="{{nombreProducto}}">
-  <br>
+  <br><br>
   <label>Precio:</label>
   <input type="text" name="modPrecioProducto" value="{{precioUnitarioProducto}}">
-  <br>
+  <br><br>
   <label>Cantidad:</label>
   <input type="text" name="modCantidadProducto" value="{{cantidadProducto}}">
-  <br>
+  <br><br>
   <label>Estado:</label>
-  <input type="text" name="modEstadoProducto" value="{{estadoProducto}}">
+  <select name="modEstadoProducto">
+    <option value="ACT">Activar || {{estadoProducto}}</option>
+    <option value="INA">Desactivar</option>
+  </select>
   <br>
   <br>
   <button type="submit" name="btnModificar">Modificar</button>

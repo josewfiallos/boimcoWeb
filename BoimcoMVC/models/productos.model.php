@@ -35,9 +35,41 @@ function buscarTodoProducto($filtro){
 }
 
 function updateProducto($registro, $id){
-  $query = "UPDATE productos SET nombreProducto='%s', precioUnitarioProducto='%d', cantidadProducto='%d', estadoProducto='%s' WHERE idProducto='%d';";
+  $query = "UPDATE productos SET nombreProducto='%s', precioUnitarioProducto='%f', cantidadProducto='%d', estadoProducto='%s' WHERE idProducto='%d';";
   $query = sprintf($query,$registro["modNombreProducto"],$registro["modPrecioProducto"],$registro["modCantidadProducto"],$registro["modEstadoProducto"],$id);
   return ejecutarNonQuery($query);
+}
+
+function agregarACarretilla($prdcod,$cantidad){
+  $producto=array();
+  $consulta = "SELECT * FROM productos WHERE idProducto='%d';";
+  $consulta = sprintf($consulta,$prdcod);
+  $producto=obtenerUnRegistro($consulta);
+
+  if($producto["cantidadProducto"]>=$cantidad){
+
+  if(isset($_SESSION["userName"])){
+      $user=$_SESSION["userName"];
+    }else {
+      $user=session_id();
+    }
+
+  $consulta = "INSERT INTO `carritos` (`idCarrito`, `idProductos`, `cantidadProductos`, `precioProductos`, `fechaCarrito`) VALUES ('%s', '%d', '%d', '%f',NOW());";
+  $consulta = sprintf($consulta,$user,
+                      $producto["idProducto"],
+                      $cantidad,
+                      $producto["precioUnitarioProducto"]
+                    );
+  ejecutarNonQuery($consulta);
+}else{
+  redirectWithMessage("Error, No hay suficiente producto en existencia el maximo es de: {{cantidadProducto}}","index.php?page=productos");
+}
+}
+
+function disminuirStock($prdcod, $cantidad){
+  $query = "UPDATE productos set cantidadProducto=cantidadProducto-'%d' WHERE idProducto='%d';";
+  $query= sprintf($query,$cantidad,$prdcod);
+  ejecutarNonQuery($query);
 }
 
 ?>

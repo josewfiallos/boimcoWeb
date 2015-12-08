@@ -1166,6 +1166,36 @@ transition: background 0.3s linear;
     background:#BDBDBD
 }
 
+#sc1Button {
+    display:inline-block;
+    float:right;
+    right: 2.3em;
+    top: 1.02em;
+    height: 33px;
+    background:#E0E0E0;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    position:relative;
+    z-index:30;
+    cursor:pointer;
+    transition: background 0.3s linear;
+    -o-transition: background 0.3s linear;
+    -moz-transition: background 0.3s linear;
+    -webkit-transition: background 0.3s linear;
+}
+
+/* Login Button Text */
+#sc1Button span {
+    color:#445058;
+    font-size:14px;
+    padding:7px 20px 9px 16px;
+    display:block
+}
+
+#sc1Button:hover {
+    background:#BDBDBD
+}
+
 /* REGISTRO */
 
 .FormRegistro{
@@ -1252,12 +1282,12 @@ border-radius: 0.2em;
 
 .listadoProductos .produclist{
   position: relative;
-  bottom: 0.5em;
+  top: 2em;
   display:inline-block;
   margin:0.5em 0.5em 0.5em;
   float:left;
   width:13.7em;
-  height:14em;
+  height:29em;
   text-align:center;
   font-size: 13px;
 }
@@ -1271,6 +1301,44 @@ border-radius: 0.2em;
   -o-transition: background-color 0.3s linear;
   -moz-transition: background-color 0.3s linear;
   -webkit-transition: background-color 0.3s linear;
+}
+
+.listadoProductos .produclist input{
+  font-family: "Lato";
+  width: 100px;
+  height: 20px;
+  position: absolute;
+  top: 5.8em;
+  right: 3em;
+  text-align: center;
+  border:1px solid #aaa;
+  box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+  border-radius:1px;
+  color: #000;
+  font-size: 12px;
+}
+
+.listadoProductos .produclist button {
+position: relative;
+top: 3em;
+left: 0.5em;
+font-family: "Lato";
+font-size: 13px;
+text-align: center;;
+width: 130px;
+height: 30px;
+background:#0277BD;
+color:#fff;
+padding:7px 10px 8px 10px;
+text-shadow:0px -1px #278db8;
+border:1px solid #0277BD;
+box-shadow:none;
+-moz-box-shadow:none;
+-webkit-box-shadow:none;
+margin:0 12px 0 0;
+cursor:pointer;
+border-radius: 0.2em;
+*padding:7px 2px 8px 2px; /* IE7 Fix */
 }
 
 .listadoProductos .produclist a{
@@ -1289,11 +1357,11 @@ border-radius: 0.2em;
 
 .listadoProductos .produclistAdmin{
   position: relative;
-  bottom: 0.5em;
+    top: 2em;
   margin:0.5em 0.5em 0.5em;
   float:left;
   width:19.5em;
-  height:19.5em;
+  height:30em;
   text-align:center;
   font-size: 13px;
 }
@@ -1302,8 +1370,8 @@ border-radius: 0.2em;
   position: relative;
   font-family: "Lato" sans-serif;
   font-weight: bold;
-  bottom: 0.5em;
-  right: 6em;
+  top: 0.3em;
+  right: 5em;
   margin-top: 1em;
   transition: background-color 0.3s linear;
   -o-transition: background-color 0.3s linear;
@@ -1312,31 +1380,42 @@ border-radius: 0.2em;
 }
 
 .listadoProductos .produclistAdmin input{
-  width: 140px;
+  font-family: "Lato";
+  width: 120px;
   position: absolute;
   left: 13.5em;
-  text-align: center;
   border:1px solid #aaa;
   box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
   border-radius:1px;
   color: #000;
-  font-size: 12px;
+  font-size: 13px;
+}
+
+.listadoProductos .produclistAdmin select{
+  width: 122px;
+  position: absolute;
+  left: 13.5em;
+  border:1px solid #aaa;
+  box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+  border-radius:1px;
+  color: #000;
+  font-family: "Lato";
+  font-size: 13px;
 }
 
 .listadoProductos .produclistAdmin button {
 position: relative;
 font-family: "Lato";
-bottom: 0.7em;
-left: 56%;
+left: 50%;
 font-size: 13px;
 text-align: center;;
-width: 80px;
+width: 100px;
 height: 30px;
-background:#339cdf;
+background:#0277BD;
 color:#fff;
 padding:7px 10px 8px 10px;
 text-shadow:0px -1px #278db8;
-border:1px solid #339cdf;
+border:1px solid #0277BD;
 box-shadow:none;
 -moz-box-shadow:none;
 -webkit-box-shadow:none;
@@ -1351,7 +1430,7 @@ border-radius: 0.2em;
 
 .formBusqueda{
   position: absolute;
-  top: 13em;
+  top: 14em;
   left: 1em;
 }
 

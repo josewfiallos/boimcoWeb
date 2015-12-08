@@ -4,7 +4,6 @@
   require_once("models/productos.model.php");
   require_once("models/login.model.php");
 
-
   function run(){
     $imagen = array();
     $filtro="";
@@ -46,6 +45,13 @@
     mw_setEstaLogueado("", false, "");
     redirectWithMessage("Saliendo","index.php?page=productos");
   }
+
+  if (isset($_POST["btnAgregar"])) {
+    agregarACarretilla($_POST["codigoProducto"],$_POST["cantidadProductosSeleccionados"]);
+    disminuirStock($_POST["codigoProducto"],$_POST["cantidadProductosSeleccionados"]);
+    redirectWithMessage("Su producto fue agregado exitosamente al carrito, Gracias","index.php?page=productos");
+  }
+
 //PASAR A DETALE PRODUCTO
     renderizar("productos",array("imagen"=> $imagen,"buscar"=>$filtro));
   }
