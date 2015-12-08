@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:Thin">
     <script type="text/javascript" src="public/js/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="public/js/login.js"></script>
+    <script type="text/javascript" src="public/js/validarTelefono.js"></script>
+    <script type="text/javascript" src="public/js/validarTexto.js"></script>
   </head>
   <link rel="stylesheet" href="public/css/estilo1.css">
   <body>

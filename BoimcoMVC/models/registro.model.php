@@ -2,6 +2,17 @@
 require_once("libs/dao.php");
 $time=time();
 
+function verificarCorreo($correo){
+  $query = "SELECT count(*)'contador' FROM usuarios WHERE correoUsuario='%s';";
+  $query = sprintf($query,$correo);
+  $resultado = obtenerUnRegistro($query);
+  if($resultado['contador']>0){
+    return true;
+  }else {
+    return false;
+  }
+}
+
 function insertarUsuario($usuario){
   if($usuario && is_array($usuario)){
      $sqlInsert = "INSERT INTO usuarios(`contraseniaUsuario`,`correoUsuario`,`fechaIngresoUsuario`)VALUES('%s','%s', curdate());";

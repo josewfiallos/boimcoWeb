@@ -433,7 +433,7 @@ body{
 
   .contactForm input {
       font-family: "Lato";
-  	height:20px;
+
   	width:420px;
   	padding:5px 8px;
   }
@@ -1249,7 +1249,7 @@ transition: background 0.3s linear;
 
 .FormRegistro input {
 position: absolute;
-  height:20px;
+
   width:190px;
   padding:5px 8px;
   display: block;
@@ -1565,7 +1565,7 @@ border-radius: 0.2em;
 
 .formActualizarUsuario input {
 position: absolute;
-  height:20px;
+
   width:160px;
   padding:5px 8px;
   display: block;
