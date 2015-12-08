@@ -54,7 +54,7 @@ function agregarACarretilla($prdcod,$cantidad){
       $user=session_id();
     }
 
-  $consulta = "INSERT INTO `carritos` (`idCarrito`, `idProductos`, `cantidadProductos`, `precioProductos`, `fechaCarrito`) VALUES ('%s', '%d', '%d', '%f',NOW());";
+  $consulta = "INSERT INTO `carritos` (`idCorreo`, `idProductos`, `cantidadProductos`, `precioProductos`, `fechaCarrito`) VALUES ('%s', '%d', '%d', '%f',NOW());";
   $consulta = sprintf($consulta,$user,
                       $producto["idProducto"],
                       $cantidad,
