@@ -48,11 +48,7 @@ function agregarACarretilla($prdcod,$cantidad){
 
   if($producto["cantidadProducto"]>=$cantidad){
 
-  if(isset($_SESSION["userName"])){
-      $user=$_SESSION["userName"];
-    }else {
-      $user=session_id();
-    }
+  $user=$_SESSION["userName"];
 
   $consulta = "INSERT INTO `carritos` (`idCorreo`, `idProductos`, `cantidadProductos`, `precioProductos`, `fechaCarrito`) VALUES ('%s', '%d', '%d', '%f',NOW());";
   $consulta = sprintf($consulta,$user,

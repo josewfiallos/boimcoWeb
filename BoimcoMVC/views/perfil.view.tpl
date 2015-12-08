@@ -1,3 +1,4 @@
+<title>Perfil Usuario - BoimcoWeb</title>
 <div class="bannerGeneral">
   <p>
     Hola, {{primerNombreCliente}} {{primerApellidoCliente}}

@@ -348,9 +348,9 @@ body{
     width: 1090px;
     margin: auto;
     color: black;
-    font-size: 14px;
+    font-size: 15px;
     padding: 20px 15px 50px 50px;
-    top: 35em;
+    top: 30em;
 }
 
 #pestanas {
@@ -410,22 +410,35 @@ body{
 }
 
 .contactForm label {
+    font-family: "Lato";
     color: #555555;
     display: inline-block;
     float: left;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: bold;
     margin-top: 3px;
     padding: 3px;
     width: 90px;
 }
 
+.contactForm select{
+    font-family: "Lato";
+    border:1px solid #aaa;
+    box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+    border-radius:2px;
+    color: #000;
+    font-size: 13px;
+    padding-right:30px;
+}
+
   .contactForm input {
+      font-family: "Lato";
   	height:20px;
   	width:420px;
   	padding:5px 8px;
   }
 .contactForm textarea {
+    font-family: "Lato";
 	padding:8px;
 	width:420px;
 }
@@ -447,7 +460,7 @@ body{
 	box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
 	border-radius:2px;
 	color: #000;
-	font-size: 12px;
+	font-size: 13px;
 	padding-right:30px;
 	-moz-transition: padding .25s;
 	-webkit-transition: padding .25s;
@@ -487,17 +500,18 @@ body{
 }
 
 .contactForm #enviar{
+  font-family: "Lato";
   position: relative;
   margin-left:0px;
-  left: 11.5%;
+  left: 18.5%;
   text-align: center;;
-  width: 200px;
+  width: 150px;
   height: 30px;
-  background:#339cdf;
+  background:#0277BD;
   color:#fff;
   padding:7px 10px 8px 10px;
   text-shadow:0px -1px #278db8;
-  border:1px solid #339cdf;
+  border:1px solid #0277BD;
   box-shadow:none;
   -moz-box-shadow:none;
   -webkit-box-shadow:none;
@@ -508,11 +522,12 @@ body{
 }
 
 .contactForm #reset{
+    font-family: "Lato";
   position: relative;
   margin-left:0px;
-  left: 11.5%;
+  left: 18.5%;
   text-align: center;;
-  width: 200px;
+  width: 150px;
   height: 30px;
   background:#F44336;
   color:#fff;
@@ -1264,11 +1279,11 @@ top: 1.5em;
 text-align: center;;
 width: 120px;
 height: 32px;
-background:#339cdf;
+background:#0277BD;
 color:#fff;
 padding:7px 10px 8px 10px;
 text-shadow:0px -1px #278db8;
-border:1px solid #339cdf;
+border:1px solid #0277BD;
 box-shadow:none;
 -moz-box-shadow:none;
 -webkit-box-shadow:none;
@@ -1581,9 +1596,9 @@ transition: padding .25s;
 
 .formActualizarUsuario button {
 position: relative;
-font-family: "Lato";
-left: 4.5%;
-top: 0.2em;
+font-family:"Lato";
+top: 0.8em;
+left: 2em;
 text-align: center;;
 width: 120px;
 height: 32px;
@@ -1601,3 +1616,176 @@ border-radius: 0.2em;
 }
 
 /* CARRETILLA */
+
+.carritoGeneral{
+position: relative;
+bottom: 2em;
+padding-left: 21.3em;
+}
+
+.carritoGeneral td{
+  padding-left: 3em;
+}
+
+.carritoGeneral #imga{
+    background-color: #90A4AE;
+}
+
+.carritoGeneral #cont{
+  background-color: #ECEFF1;
+  width: 52%;
+}
+
+.carritoGeneral #cont2{
+  background-color: #ECEFF1;
+  width: 79%;
+}
+
+.carritoGeneral #elim{
+    background-color: #ECEFF1;
+    width: 26.8%;
+}
+
+.carritoGeneral button {
+position: relative;
+font-family:"Lato";
+text-align: center;;
+width: 80px;
+background: #F44336;
+border:1px solid #F44336;
+height: 32px;
+color:#fff;
+box-shadow:none;
+cursor:pointer;
+border-radius: 0.2em;
+}
+
+.factura{
+  position: relative;
+  right: 0.5em;
+}
+
+.factura #btnBorrarCarrito{
+  font-family: "Lato";
+  width: 200px;
+  background: #F44336;
+  border:1px solid #F44336;
+}
+
+.totales{
+  position: relative;
+  bottom: 3em;
+  background-color: #ECEFF1;
+  width: 55%;
+  border-radius: 0.3em;
+}
+
+.factura button {
+position: relative;
+font-family:"Lato";
+bottom: 4em;
+left: 0.7em;
+text-align: center;;
+width: 200px;
+height: 32px;
+background:#0277BD;
+color:#fff;
+padding:7px 10px 8px 10px;
+border:1px solid #0277BD;
+box-shadow:none;
+-moz-box-shadow:none;
+-webkit-box-shadow:none;
+margin:0 12px 0 0;
+cursor:pointer;
+border-radius: 0.2em;
+*padding:7px 2px 8px 2px; /* IE7 Fix */
+}
+
+.imagenCarritoVacio{
+  position: relative;
+  padding-left: 31em;
+  bottom: 1em;
+}
+
+.imagenComprasVacias{
+  position: relative;
+  padding-left: 34.5em;
+  bottom: 1em;
+  opacity: 0.7;
+}
+
+.textoVacioCompras{
+  position: relative;
+  font-family: "Lato";
+  padding-left: 24.2em;
+  text-align: center;
+  color: #757575;
+  width: 40%;
+  font-size: 17px;
+}
+
+.textoVacioCompras a{
+  text-decoration: none;
+  color: #757575;
+}
+
+
+.textoVacio{
+  position: relative;
+  bottom: 1em;
+  font-family: "Lato";
+  padding-left: 24.2em;
+  text-align: center;
+  color: #757575;
+  width: 40%;
+  font-size: 17px;
+}
+
+.textoVacio a{
+  text-decoration: none;
+  color: #757575;
+}
+/* COMPRAS LISTADO */
+
+.Compras #arriba{
+    background-color: #607D8B;
+    color: white;
+    font-size: 16px;
+}
+
+
+.Compras{
+  background-color: #ECEFF1;
+  margin-left: 15em;
+  margin-right: 15em;
+}
+
+.Compras button {
+position: relative;
+font-family:"Lato";
+text-align: center;;
+width: 100px;
+background: #0277BD;
+border:1px solid #0277BD;
+height: 32px;
+color:#fff;
+box-shadow:none;
+cursor:pointer;
+border-radius: 0.2em;
+}
+
+.butonRegreso button {
+  position: relative;
+  left: 43.4em;
+  bottom: 1em;
+  font-family:"Lato";
+  text-align: center;;
+  width: 200px;
+  background: #0277BD;
+  border:1px solid #0277BD;
+  height: 32px;
+  color:#fff;
+  box-shadow:none;
+  cursor:pointer;
+  border-radius: 0.2em;
+}

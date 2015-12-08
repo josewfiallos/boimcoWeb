@@ -16,7 +16,6 @@
         <div id="loginContainer">
             <a href="#" id="loginButton"><span>Log in</span><em></em></a>
             <a href="index.php?page=registro" id="signUpButton"><span>Sign Up</span><em></em></a>
-            <a href="index.php?page=carrito" id="sc1Button"><span><img src="public/imgs/sc.png" width=20px height=20px/></span><em></em></a>
             <div style="clear:both"></div>
             <div id="loginBox">
                 <form id="loginForm" method="post">

@@ -47,9 +47,14 @@
   }
 
   if (isset($_POST["btnAgregar"])) {
-    agregarACarretilla($_POST["codigoProducto"],$_POST["cantidadProductosSeleccionados"]);
-    disminuirStock($_POST["codigoProducto"],$_POST["cantidadProductosSeleccionados"]);
-    redirectWithMessage("Su producto fue agregado exitosamente al carrito, Gracias","index.php?page=productos");
+    if ($_SESSION["userLogged"]==true) {
+      agregarACarretilla($_POST["codigoProducto"],$_POST["cantidadProductosSeleccionados"]);
+      disminuirStock($_POST["codigoProducto"],$_POST["cantidadProductosSeleccionados"]);
+      redirectWithMessage("Su producto fue agregado exitosamente al carrito, Gracias","index.php?page=productos");
+    }
+    else{
+      redirectWithMessage("Registrese o inicie sesion para poder agregar a Carrito","index.php?page=productos");
+    }
   }
 
 //PASAR A DETALE PRODUCTO

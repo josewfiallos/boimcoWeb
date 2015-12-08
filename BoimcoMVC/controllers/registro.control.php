@@ -33,11 +33,11 @@ function run(){
       if (compararDatos($correo,$Contrasenia)){
         $rol = obtenerRol($correo);
         mw_setEstaLogueado($correo,true,$rol);
-          redirectWithMessage("Ingresando","index.php?page=registro");
+          redirectWithMessage("Ingresando","index.php?page=home");
       }
       else{
         $errores[] = array("errmsg"=>"Usuario o Contraseña Incorrecta");
-        redirectWithMessage("Error Usuario o Contraseña Incorrecta","index.php?page=registro");
+        redirectWithMessage("Error Usuario o Contraseña Incorrecta","index.php?page=home");
       }
     }
   else {

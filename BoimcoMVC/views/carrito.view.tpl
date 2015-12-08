@@ -4,39 +4,53 @@
     Carrito Compras
   </p>
 </div>
-<div class="carritoContent">
-  {{if productos}}
-  {{foreach productos}}
-  <a><img src="{{imgProducto}}" width="150px" height="150px"/></a><br><br><br>
-  {{endfor productos}}
+{{if productos}}
+{{foreach productos}}
+<div class="carritoGeneral">
+  <table>
+      <td id="imga" >
+        <a><img src="{{imgProducto}}" width="90px" height="90px"/></a>
+      </td>
+      <td id="cont">
+        <b>Producto:</b> {{nombreProducto}}<br>
+        <b>Cantidad:</b> {{cantidadProductos}}<br>
+        <b>Precio Unitario:</b> {{precioProductos}}<br>
+        <b>Subtotal:</b> {{subtotal}}<br>
+      </td>
+      <td id="elim">
+        <form method="post">
+            <button type="submit" name="btnEliminar">Eliminar</button>
+            <input type="hidden" name="idCarrito" value="{{idCarrito}}">
+        </form>
+      </td>
+  </table>
 </div>
+  {{endfor productos}}
+  <br><br>
 <div align="center">
-  <div class="newpro">
+  <div class="totales">
 <table >
   <tr>
-    <td> <b>SUBTOTAL: </b></td>
+    <td> <b>Subtotal: </b></td>
     <td>{{subtotal}}</td>
   </tr>
   <tr>
-    <td> <b>IMPUESTO: </b></td>
+    <td> <b>Impuestos: </b></td>
     <td>{{impuesto}}</td>
   </tr>
 
   <tr>
-    <td> <b>TOTAL: </b></td>
+    <td> <b>Total: </b></td>
     <td>{{total}}</td>
   </tr>
 
 </table>
 </div>
 <br>
-<form action="index.php?page=facturar" method="post">
-  <div class="boton">
-  <input type="submit" name="btnFacturar" id="btnFacturar" value="Facturar">
-</div>
+<form class="factura" method="post">
+  <button id="btnBorrarCarrito" type="submit" name="btnBorrarCarrito">Eliminar Carrito De Compras</button>
+  <button type="submit" name="btnFacturar">Realizar Compra</button>
 </form>
 {{endif productos}}
-
-
 
 </div>

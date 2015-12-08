@@ -1,4 +1,4 @@
-<title>Sobre Nosotros - Boimco</title>
+<title>Sobre Nosotros - BoimcoWeb</title>
 <div class="bannerGeneral">
   <p>
     Sobre Nosotros

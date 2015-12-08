@@ -2,32 +2,83 @@
 
   require_once("libs/template_engine.php");
   require_once("models/carrito.model.php");
+  require_once("models/login.model.php");
+  require_once("models/facturar.model.php");
 
   function run(){
 
     $productos =  array();
 
-    $resultados= array();
+    $resultado= array();
     $resultado["subtotal"]="";
     $resultado["impuesto"]="";
     $resultado["total"]="";
 
+    if (isset($_POST["btnLogin"])){
+      $correo=$_POST['email'];
+      $Contrasenia=$_POST['password'];
+      $estado=verificacionDeUsuario($correo);
+      if ($estado=='ACT') {
+        if (compararDatos($correo,$Contrasenia)){
+          $rol = obtenerRol($correo);
+          mw_setEstaLogueado($correo,true,$rol);
+          if ($rol=='CLT') {
+          redirectWithMessage("Ingresando","index.php?page=carrito");
+          }
+          else {
+          redirectWithMessage("Ingresando","index.php?page=home");
+          }
+        }
+        else{
+          $errores[] = array("errmsg"=>"Usuario o Contraseña Incorrecta");
+          redirectWithMessage("Error Usuario o Contraseña Incorrecta","index.php?page=carrito");
+        }
+      }
+    else {
+      $errores[] = array("errmsg"=>"Usuario Inactivo");
+      redirectWithMessage("Su Cuenta de Usuario se encuentra Inactiva, Enviar mensaje para reactivacion de cuenta","index.php?page=contactus");
+    }
+  }
+
+  if (isset($_POST["btnSignOut"])) {
+    mw_setEstaLogueado("", false, "");
+    redirectWithMessage("Saliendo","index.php?page=home");
+  }
+
    $productos = mostrarCarretilla();
 
-    if (isset($_POST["btnSignOut"])) {
-      mw_setEstaLogueado("", false, "");
-      redirectWithMessage("Saliendo","index.php?page=home");
+    if (isset($_POST["btnEliminar"])) {
+      if (eliminarProductoDeCarretilla($_POST["idCarrito"])) {
+        redirectWithMessage("Producto Eliminado de su Carrito","index.php?page=carrito");
+      }
     }
 
     if($productos){
       foreach ($productos as $value) {
         $resultado["subtotal"]+= $value["cantidadProductos"]*$value["precioProductos"];
       }
-
-        $resultado["impuesto"]=  number_format($resultado["subtotal"]*0.12, 2, '.', '');
+      $resultado["impuesto"]=  number_format($resultado["subtotal"]*0.12, 2, '.', '');
       $resultado["total"]=number_format($resultado["subtotal"]+$resultado["impuesto"], 2, '.', '');
       $resultado["subtotal"]= number_format($resultado["subtotal"], 2, '.', '');
     }
+    else {
+      redirectToUrl("index.php?page=carritoVacio");
+    }
+
+    if (isset($_POST["btnFacturar"])) {
+
+      if ($id=facturar($productos,$resultado)) {
+        borrarMiCarretilla($_SESSION["userName"]);
+          redirectWithMessage("Compra Exitosa","index.php?page=carrito");
+      }
+
+    }
+
+    if (isset($_POST["btnBorrarCarrito"])) {
+      borrarMiCarretillaCompleta($_SESSION["userName"],$productos);
+        redirectWithMessage("Carrito Eliminado :D","index.php?page=carrito");
+    }
+
     renderizar("carrito",array("productos" =>$productos,"subtotal"=>$resultado["subtotal"],"impuesto"=>$resultado["impuesto"],"total"=>$resultado["total"]));
 
   }

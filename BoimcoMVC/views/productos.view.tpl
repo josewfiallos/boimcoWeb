@@ -27,7 +27,7 @@
   <label>Cantidad</label>
   <input type="number" name="cantidadProductosSeleccionados" placeholder="Disponibles: {{cantidadProducto}}" max="{{cantidadProducto}}">
   <br>
-  <button type="submit" name="btnAgregar">Agregar a Carrito</button>
+  <button class="my_popup_open" type="submit" name="btnAgregar">Agregar a Carrito</button>
   </p>
   <input type="hidden" name="codigoProducto" value="{{idProducto}}">
   </form>

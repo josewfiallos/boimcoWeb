@@ -23,7 +23,7 @@
     if (isset($_POST["btnModificar"])) {
       //VALIDACIONES AQUI
       if (modificarCliente($_POST,$cliente["idCliente"])){
-      redirectWithMessage("Perfil Actualizado","index.php?page=home");
+      redirectWithMessage("Perfil Actualizado","index.php?page=perfil");
       }
 }
     renderizar("perfil",$cliente);

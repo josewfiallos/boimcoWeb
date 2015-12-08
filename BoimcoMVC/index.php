@@ -57,6 +57,18 @@
         case 'productosAdmin':
             require_once("controllers/productosAdmin.control.php");
         break;
+        case 'carritoVacio':
+            require_once("controllers/carritoVacio.control.php");
+        break;
+        case 'facturar':
+            require_once("controllers/facturar.control.php");
+        break;
+        case 'comprasDetalles':
+            require_once("controllers/compras.control.php");
+          break;
+        case 'comprasVacia':
+            require_once("controllers/comprasVacia.control.php");
+          break;
         // case "althome":
         //     require_once("controllers/althome.control.php");
         //     break;
