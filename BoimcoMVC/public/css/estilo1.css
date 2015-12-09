@@ -553,7 +553,7 @@ body{
     display: block;
     margin: 0 auto;
     position: relative;
-    top: 17em;
+    top: 6em;
 }
 
 .slides * {
@@ -653,32 +653,6 @@ input#img-4:checked ~ .nav-dots label#img-dot-4,
 input#img-5:checked ~ .nav-dots label#img-dot-5,
 input#img-6:checked ~ .nav-dots label#img-dot-6 {
 	background: rgba(0, 0, 0, 0.8);
-}
-
-.Content .textimg{
-  position: absolute;
-  left: 35%;
-  top: 16.5em;
-}
-
-.Content .text {
-  position: absolute;
-  top: 5.5em;
-  left: 11.6em;
-  font-size: 54px;
-  font-family: "Lato" sans-serif;
-  font-weight: lighter;
-  color: #fff;
-}
-
-.Content .marco2{
-  position: absolute;
-  width: 75%;
-  height: 30%;
-  left: 10.5em;
-  top: 14.5em;
-  background: #000;
-  opacity: 0.8;
 }
 
 /* SERVICIOS */

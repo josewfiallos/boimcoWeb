@@ -1,10 +1,9 @@
     <title>Galeria - BoimcoWeb</title>
-<div class="Content">
-        <div class="marco2"></div>
-  <div class="text">
-     GALERIA
-  </div>
-<div class="textimg"> <img src="public/imgs/camera-icon.png" height="130" width="130"/></div>
+    <div class="bannerGeneral">
+    <p>
+    Galeria de Imagenes
+    </p>
+    </div>
   <ul class="slides">
 <input type="radio" name="radio-btn" id="img-1" checked />
 <li class="slide-container">

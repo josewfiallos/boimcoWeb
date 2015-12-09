@@ -1,5 +1,4 @@
 <title>Contactanos - BoimcoWeb</title>
-</script>
 <div class="bannerGeneral">
 <p>
 Contáctanos
