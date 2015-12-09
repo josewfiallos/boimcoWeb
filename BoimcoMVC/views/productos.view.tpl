@@ -25,7 +25,7 @@
     Precio: L {{precioUnitarioProducto}}
   <br><br>
   <label>Cantidad</label>
-  <input type="number" name="cantidadProductosSeleccionados" placeholder="Disponibles: {{cantidadProducto}}" max="{{cantidadProducto}}" min="0" onkeypress="return validarTelefono(event)" onpaste="return false">
+  <input type="number" name="cantidadProductosSeleccionados" placeholder="Disponibles: {{cantidadProducto}}" max="{{cantidadProducto}}" min="1" onkeypress="return validarTelefono(event)" onpaste="return false">
   <br>
   <button class="my_popup_open" type="submit" name="btnAgregar">Agregar a Carrito</button>
   </p>

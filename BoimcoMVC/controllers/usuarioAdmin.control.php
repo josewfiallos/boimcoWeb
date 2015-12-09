@@ -11,10 +11,10 @@
     if (obtenerUsuarios()) {
       if (isset($_POST["btnCambiarEstado"])) {
         if ($_POST["estadoUsuario"]=='ACT') {
-        desavilitarUsuario($_POST["idUsuario"]);
+        deshabilitarUsuario($_POST["idUsuario"]);
         redirectToUrl("index.php?page=usuarioAdmin");
         }
-        abilitarUsuario($_POST["idUsuario"]);
+        habilitarUsuario($_POST["idUsuario"]);
         redirectToUrl("index.php?page=usuarioAdmin");
       }
 

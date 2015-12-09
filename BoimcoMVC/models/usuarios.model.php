@@ -24,14 +24,14 @@
       return ejecutarNonQuery($query);
     }
 
-    function desavilitarUsuario($id){
+    function deshabilitarUsuario($id){
       $estado="INA";
       $query = "UPDATE usuarios SET estadoUsuario='%s' WHERE idUsuario='%d';";
       $query = sprintf($query,$estado,$id);
       return ejecutarNonQuery($query);
     }
 
-    function abilitarUsuario($id){
+    function habilitarUsuario($id){
       $estado="ACT";
       $query = "UPDATE usuarios SET estadoUsuario='%s' WHERE idUsuario='%d';";
       $query = sprintf($query,$estado,$id);

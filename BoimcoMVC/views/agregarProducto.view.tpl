@@ -16,7 +16,7 @@
      </li>
      <li>
          <label>Cantidad: </label>
-         <input type="number" name="newCantidadProducto" min="0" required />
+         <input type="number" name="newCantidadProducto" min="1" required />
      </li>
      <li>
          <label>Estado: </label>

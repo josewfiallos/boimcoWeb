@@ -12,9 +12,9 @@
     $boolValidar = true;
 
     if (isset($_POST["btnDesactivar"])) {
-        desavilitarUsuario($idUsuario);
+        deshabilitarUsuario($idUsuario);
         mw_setEstaLogueado("", false, "");
-        redirectWithMessage("Usuario Inavilitado","index.php?page=home");
+        redirectWithMessage("Usuario Inhabilitado","index.php?page=home");
     }
 
     if (isset($_POST["btnSignOut"])) {
