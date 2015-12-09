@@ -47,6 +47,9 @@
   }
 
   if (isset($_POST["btnAgregar"])) {
+    if ($_POST["cantidadProductosSeleccionados"]==0) {
+      redirectWithMessage("Asegurese de seleccionar una cantidad válida.","index.php?page=productos");
+    }
     if ($_SESSION["userLogged"]==true && $_SESSION["userRol"]=='CLT') {
       agregarACarretilla($_POST["codigoProducto"],$_POST["cantidadProductosSeleccionados"]);
       disminuirStock($_POST["codigoProducto"],$_POST["cantidadProductosSeleccionados"]);
