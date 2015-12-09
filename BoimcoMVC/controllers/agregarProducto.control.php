@@ -19,7 +19,7 @@
 
         if ($archivo != "") {
           // guardamos el archivo a la carpeta files
-          $destino =  "C:/wamp/www/Negocios Web/BoimcoMVC/public/imgs/productos/".$archivo;
+          $destino =  "C:/wamp/www/Proyecto/boimcoWeb/BoimcoMVC/public/imgs/productos/".$archivo;
           copy($_FILES['imgSelect']['tmp_name'],$destino);
 
           insertarNuevoProducto($datos);
