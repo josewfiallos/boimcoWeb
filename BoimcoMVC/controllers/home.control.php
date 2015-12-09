@@ -13,21 +13,22 @@
       $correo=$_POST['email'];
       $Contrasenia=$_POST['password'];
       $estado=verificacionDeUsuario($correo);
-      if ($estado=='ACT') {
-        if (compararDatos($correo,$Contrasenia)){
-          $rol = obtenerRol($correo);
+      if (compararDatos($correo,$Contrasenia)){
+        $rol = obtenerRol($correo);
+        if ($estado=='ACT') {
           mw_setEstaLogueado($correo,true,$rol);
-            redirectToUrl("index.php?page=home");
+          redirectToUrl("index.php?page=home");
         }
-        else{
-          $errores[] = array("errmsg"=>"Usuario o Contraseña Incorrecta");
-          redirectWithMessage("Error Usuario o Contraseña Incorrecta","index.php?page=home");
-        }
+      else {
+        $errores[] = array("errmsg"=>"Usuario Inactivo");
+        redirectWithMessage("Su Cuenta de Usuario se encuentra Inactiva, Enviar mensaje para reactivacion de cuenta","index.php?page=contactus");
       }
-    else {
-      $errores[] = array("errmsg"=>"Usuario Inactivo");
-      redirectWithMessage("Su Cuenta de Usuario se encuentra Inactiva, Enviar mensaje para reactivacion de cuenta","index.php?page=contactus");
-    }
+      }
+      else{
+        $errores[] = array("errmsg"=>"Usuario o Contraseña Incorrecta");
+        redirectWithMessage("Error Usuario o Contrasenia Incorrecta","index.php?page=home");
+      }
+
 
     }
 
