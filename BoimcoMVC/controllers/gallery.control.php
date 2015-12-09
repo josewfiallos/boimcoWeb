@@ -16,7 +16,7 @@
         if (compararDatos($correo,$Contrasenia)){
           $rol = obtenerRol($correo);
           mw_setEstaLogueado($correo,true,$rol);
-            redirectWithMessage("Ingresando","index.php?page=gallery");
+            redirectToUrl("index.php?page=gallery");
         }
         else{
           $errores[] = array("errmsg"=>"Usuario o Contraseña Incorrecta");
@@ -31,7 +31,7 @@
 
   if (isset($_POST["btnSignOut"])) {
     mw_setEstaLogueado("", false, "");
-    redirectWithMessage("Saliendo","index.php?page=gallery");
+    redirectToUrl("index.php?page=gallery");
   }
     renderizar("gallery",array());
   }

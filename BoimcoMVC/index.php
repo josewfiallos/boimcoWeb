@@ -69,6 +69,15 @@
         case 'comprasVacia':
             require_once("controllers/comprasVacia.control.php");
           break;
+        case 'usuarioAdmin':
+            require_once("controllers/usuarioAdmin.control.php");
+          break;
+        case 'agregarProducto':
+            require_once("controllers/agregarProducto.control.php");
+          break;
+        case 'usuarioAdminVacio':
+            require_once("controllers/usuarioAdminVacio.control.php");
+          break;
         // case "althome":
         //     require_once("controllers/althome.control.php");
         //     break;

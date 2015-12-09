@@ -1,42 +1,13 @@
 <?php
+/* Home Controller
+ * 2014-10-14
+ * Created By OJBA
+ * Last Modification 2014-10-14 20:04
+ */
   require_once("libs/template_engine.php");
-  require_once("models/login.model.php");
-  require_once("models/validaciones.model.php");
+    require_once("models/login.model.php");
 
   function run(){
-
-    $htmlContacto = array();
-    $htmlContacto["txtName"] = "";
-    $htmlContacto["txtEmail"] = "";
-    $htmlContacto["txtTel"] = "";
-    $htmlContacto["txtMsg"] = "";
-    $boolValidar = true;
-
-    if (isset($_POST["btnEnviar"])) {
-
-      if(!validar('email',$_POST["txtEmail"]) ) {
-        $boolValidar=false;
-        echo "<script>alert('Error! Ingrese correo correctamente, Ejemplo: correo@electroni.co');</script>";
-    }
-      if(!validar('nombre',$_POST["txtName"]) ) {
-        $boolValidar=false;
-        echo "<script>alert('Error! Nombre ingresado con caracteres no permitidos');</script>";
-      }
-      if(!validar('numero',$_POST["txtTel"]) ) {
-        $boolValidar=false;
-        echo "<script>alert('Error! Teléfeno ingresado con caracteres no permitidos');</script>";
-      }
-
-      if ($boolValidar) {
-        redirectWithMessage("¡Gracias por sus comentarios! Su mensaje ha sido enviado correctamente","index.php?page=home");
-      }
-
-
-    }//IF Enviar
-
-
-
-
     if (isset($_POST["btnLogin"])){
       $correo=$_POST['email'];
       $Contrasenia=$_POST['password'];
@@ -45,7 +16,7 @@
         if (compararDatos($correo,$Contrasenia)){
           $rol = obtenerRol($correo);
           mw_setEstaLogueado($correo,true,$rol);
-            redirectWithMessage("Ingresando","index.php?page=contactus");
+            redirectToUrl("index.php?page=contactus");
         }
         else{
           $errores[] = array("errmsg"=>"Usuario o Contraseña Incorrecta");
@@ -60,12 +31,8 @@
 
       if (isset($_POST["btnSignOut"])) {
         mw_setEstaLogueado("", false, "");
-        redirectWithMessage("Saliendo","index.php?page=contactus");
+        redirectToUrl("index.php?page=contactus");
       }
-
-
-
-
     renderizar("contactus",array());
   }
   run();

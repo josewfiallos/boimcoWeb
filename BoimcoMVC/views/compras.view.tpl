@@ -24,7 +24,7 @@
         <td><b>L.{{totalFactura}}</b></td>
         <td>
         <form method="post">
-          <button id="show" onclick="window.location.href='index.php?page=contactus'" type="submit" name="btnVer">Ver Articulos</button>
+          <button id="show" type="submit" name="btnVer">Ver Articulos</button>
           <input type="hidden" name="idFacturaSelect" value="{{idFactura}}">
         </form>
         </td>

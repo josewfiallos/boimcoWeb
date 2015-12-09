@@ -26,7 +26,7 @@
 
     if (isset($_POST["btnSignOut"])) {
       mw_setEstaLogueado("", false, "");
-      redirectWithMessage("Saliendo","index.php?page=home");
+      redirectToUrl("index.php?page=home");
     }
 
 

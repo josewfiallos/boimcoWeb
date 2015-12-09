@@ -24,6 +24,12 @@ function buscarProductos($filtro){
   return $producto;
 }
 
+function insertarNuevoProducto($nuevoProducto){
+  $query="INSERT INTO `productos` (`nombreProducto`, `precioUnitarioProducto`, `cantidadProducto`, `estadoProducto`, `imgProducto`)
+   VALUES ('%s', '%f', '%d', '%s', '%s');";
+  $query=sprintf($query,$nuevoProducto["nombre"], $nuevoProducto["precio"], $nuevoProducto["cantidad"], $nuevoProducto["estado"], $nuevoProducto["imagen"]);
+  ejecutarNonQuery($query);
+}
 
 function buscarTodoProducto($filtro){
   $producto= array();

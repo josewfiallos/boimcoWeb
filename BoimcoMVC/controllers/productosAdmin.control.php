@@ -24,7 +24,7 @@
 
   if (isset($_POST["btnSignOut"])) {
     mw_setEstaLogueado("", false, "");
-    redirectWithMessage("Saliendo","index.php?page=productos");
+  redirectToUrl("index.php?page=productos");
   }
 //PASAR A DETALE PRODUCTO
     renderizar("productosAdmin",array("imagen"=> $imagen,"buscar"=>$filtro));

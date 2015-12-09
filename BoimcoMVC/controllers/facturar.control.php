@@ -4,8 +4,6 @@
 
   function run(){
 
-    
-
     renderizar("facturar",array());
 
   }

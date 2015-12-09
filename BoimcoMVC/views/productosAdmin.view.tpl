@@ -1,7 +1,7 @@
 <title>Productos Administrador - BoimcoWeb</title>
 <div class="bannerGeneral">
   <p>
-    Productos
+    Mantenimiento de Productos
   </p>
 </div>
 <form class="formBusqueda" method="post">
@@ -12,7 +12,7 @@
   <li>
     <button type="submit" name="btnBuscar">Buscar</button>
   </li>
-    <button id="boton2" type="submit" name="btnAgregar">Agregar Producto</button>
+    <button id="boton2" type="button" name="btnAgregar" onclick="location.href='index.php?page=agregarProducto'">Agregar Producto</button>
 </ul>
 </form>
 <div class="listadoProductos">

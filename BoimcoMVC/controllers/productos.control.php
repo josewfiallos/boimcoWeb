@@ -24,10 +24,10 @@
           $rol = obtenerRol($correo);
           mw_setEstaLogueado($correo,true,$rol);
           if ($rol=='CLT') {
-          redirectWithMessage("Ingresando","index.php?page=productos");
+          redirectToUrl("index.php?page=productos");
           }
           else {
-          redirectWithMessage("Ingresando","index.php?page=productosAdmin");
+          redirectToUrl("index.php?page=productos");
           }
         }
         else{
@@ -43,14 +43,16 @@
 
   if (isset($_POST["btnSignOut"])) {
     mw_setEstaLogueado("", false, "");
-    redirectWithMessage("Saliendo","index.php?page=productos");
+    redirectToUrl("index.php?page=productos");
   }
 
   if (isset($_POST["btnAgregar"])) {
-    if ($_SESSION["userLogged"]==true) {
+    if ($_SESSION["userLogged"]==true && $_SESSION["userRol"]=='CLT') {
       agregarACarretilla($_POST["codigoProducto"],$_POST["cantidadProductosSeleccionados"]);
       disminuirStock($_POST["codigoProducto"],$_POST["cantidadProductosSeleccionados"]);
       redirectWithMessage("Su producto fue agregado exitosamente al carrito, Gracias","index.php?page=productos");
+    }
+    else if ($_SESSION["userLogged"]==true && $_SESSION["userRol"]=='ADM') {
     }
     else{
       redirectWithMessage("Registrese o inicie sesion para poder agregar a Carrito","index.php?page=productos");

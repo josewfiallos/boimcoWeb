@@ -11,7 +11,7 @@ function run(){
       if (compararDatos($correo,$Contrasenia)){
         $rol = obtenerRol($correo);
         mw_setEstaLogueado($correo,true,$rol);
-          redirectWithMessage("Ingresando","index.php?page=services");
+          redirectToUrl("index.php?page=services");
       }
       else{
         $errores[] = array("errmsg"=>"Usuario o Contraseña Incorrecta");
@@ -26,7 +26,7 @@ function run(){
 
     if (isset($_POST["btnSignOut"])) {
       mw_setEstaLogueado("", false, "");
-      redirectWithMessage("Saliendo","index.php?page=services");
+      redirectToUrl("index.php?page=services");
     }
   renderizar("services",array());
 }

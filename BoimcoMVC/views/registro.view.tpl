@@ -13,19 +13,19 @@
       <ul>
          <li>
              <label for="txtName">Nombre: </label>
-               <input type="text" name="nombreUsuario" value="{{nombreUsuario}}" id="nombreUsuario" placeholder="Primer Nombre" maxlength="15" required onkeypress="return validarTexto(event)" onpaste="return false"/>
+               <input type="text" name="nombreUsuario" value="{{nombreUsuario}}" id="nombreUsuario" placeholder="Primer Nombre" maxlength="15" required />
          </li>
          <li>
            <label for="txtApellido">Apellido: </label>
-           <input type="text" name="apellidoUsuario" value="{{apellidoUsuario}}" id="apellidoUsuario" placeholder="Primer Apellido" maxlength="15" required onkeypress="return validarTexto(event)" onpaste="return false" />
+           <input type="text" name="apellidoUsuario" value="{{apellidoUsuario}}" id="apellidoUsuario" placeholder="Primer Apellido" maxlength="15" required />
+         </li>
+         <li>
+             <label for="txtEmail">Correo Electrónico: </label>
+             <input type="email" name="emailUsuario" value="{{emailUsuario}}" placeholder="Escriba su Correo Electronico" id="emailUsuario" required />
          </li>
          <li>
              <label for="txtTel">Teléfono: </label>
              <input type="text" name="telefonoUsuario" value="{{telefonoUsuario}}" placeholder="Sin guión ni paréntesis" id="telefonoUsuario" required maxlength="12" onkeypress="return validarTelefono(event)" onpaste="return false" />
-         </li>
-         <li>
-             <label for="txtEmail">Correo Electrónico: </label>
-             <input type="text" name="emailUsuario" value="{{emailUsuario}}" placeholder="Escriba su Correo Electronico" id="emailUsuario" required />
          </li>
          <li>
           <label for="txtContraseña">Contraseña: </label>

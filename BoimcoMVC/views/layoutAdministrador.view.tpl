@@ -9,8 +9,6 @@
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato:Thin">
     <script type="text/javascript" src="public/js/jquery-2.1.4.min.js"></script>
     <script type="text/javascript" src="public/js/login.js"></script>
-    <script type="text/javascript" src="public/js/validarTelefono.js"></script>
-    <script type="text/javascript" src="public/js/validarTexto.js"></script>
   </head>
   <link rel="stylesheet" href="public/css/estilo1.css">
   <body>
@@ -21,6 +19,14 @@
               <button id="signOutButton" type="submit" name="btnSignOut">Sign Out</button>
             </form>
             <div style="clear:both"></div>
+            <div id="loginBox">
+                <form id="loginForm" method="post">
+                    <fieldset id="body">
+                      <a href="index.php?page=productosAdmin"><span>Mantenimiento de Productos</span></a>
+                      <a href="index.php?page=usuarioAdmin"><span>Control de Usuarios</span></a>
+                    </fieldset>
+                </form>
+            </div>
         </div>
         <!-- Login Ends Here -->
     <div class="HomeHeader">
@@ -30,7 +36,7 @@
           <li><a href="index.php?page=about">Sobre Nososotros</a></li>
           <li><a href="index.php?page=gallery">Galería</a></li>
           <li><a href="index.php?page=services">Servicios</a></li>
-          <li><a href="index.php?page=productosAdmin">Productos</a></li>
+          <li><a href="index.php?page=productos">Productos</a></li>
           <li><a href="index.php?page=contactus">Contáctanos</a></li>
         </div>
     </div>

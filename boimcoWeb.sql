@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS `boimcoweb`.`productos` (
   `precioUnitarioProducto` FLOAT NOT NULL,
   `cantidadProducto` INT(11) NOT NULL,
   `estadoProducto` CHAR(3) NOT NULL DEFAULT 'ACT',
-  `imgProducto` VARCHAR(45) NOT NULL,
+  `imgProducto` VARCHAR(200) NOT NULL,
   PRIMARY KEY (`idProducto`))
 ENGINE = InnoDB
 AUTO_INCREMENT = 9

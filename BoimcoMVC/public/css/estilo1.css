@@ -433,7 +433,7 @@ body{
 
   .contactForm input {
       font-family: "Lato";
-
+  	height:20px;
   	width:420px;
   	padding:5px 8px;
   }
@@ -1249,7 +1249,7 @@ transition: background 0.3s linear;
 
 .FormRegistro input {
 position: absolute;
-
+  height:20px;
   width:190px;
   padding:5px 8px;
   display: block;
@@ -1565,7 +1565,7 @@ border-radius: 0.2em;
 
 .formActualizarUsuario input {
 position: absolute;
-
+  height:20px;
   width:160px;
   padding:5px 8px;
   display: block;
@@ -1788,4 +1788,203 @@ border-radius: 0.2em;
   box-shadow:none;
   cursor:pointer;
   border-radius: 0.2em;
+}
+
+/* LISTADO DE USUARIOS */
+
+.usuarios #arriba{
+    background-color: #607D8B;
+    color: white;
+    font-size: 15px;
+}
+
+.usuarios{
+  background-color: #ECEFF1;
+  margin-left: 15em;
+  margin-right: 15em;
+}
+
+.usuarios #INA{
+position: relative;
+font-family:"Lato";
+text-align: center;;
+width: 130px;
+background: #0277BD;
+border:1px solid #0277BD;
+height: 32px;
+color:#fff;
+box-shadow:none;
+cursor:pointer;
+border-radius: 0.2em;
+}
+
+.usuarios #INA span{
+  display: none;
+}
+.usuarios #INA:after {
+  content: 'Activar';
+}
+
+.usuarios #ACT{
+position: relative;
+font-family:"Lato";
+text-align: center;;
+width: 130px;
+background: #F44336;
+border:1px solid #F44336;
+height: 32px;
+color:#fff;
+box-shadow:none;
+cursor:pointer;
+border-radius: 0.2em;
+}
+
+.usuarios #ACT span{
+  display: none;
+}
+.usuarios #ACT:after {
+  content: 'Desactivar';
+}
+
+/* PRODUCTOS AÑADIR */
+
+.formProducto{
+  position: absolute;
+  left: 32%;
+  top: 12em;
+  height: 340px;
+  max-width: 390px;
+  margin-top: 50px;
+  padding-left: 3em;
+  padding-right: 4.5em;
+  background-color: #EEEEEE;
+  border-radius: 0.5em;
+}
+
+.formProducto label{
+  font-family: "Lato";
+  font-weight: normal;
+  font-size: 13px;
+  color: #212121;
+}
+
+.formProducto ul {
+    width:750px;
+    list-style-type:none;
+	margin:0px;
+  margin-top: 1.2em;
+  margin-left: 1em;
+	padding:0px;
+}
+
+.formProducto li{
+	padding:12px;
+	position:relative;
+}
+
+.formProducto input {
+position: absolute;
+  height:20px;
+  width:80px;
+  padding:5px 8px;
+  display: block;
+  left: 11em;
+  bottom: 0.3em;
+}
+
+.formProducto #LABELNOMBRE input{
+  height:20px;
+  width:200px;
+  padding:5px 8px;
+  display: block;
+  left: 11em;
+  bottom: 0.3em;
+}
+
+.formProducto input{
+border:1px solid #aaa;
+box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+border-radius:2px;
+color: #000;
+font-family: "Lato";
+font-size: 13px;
+padding-right:4px;
+-moz-transition: padding .25s;
+-webkit-transition: padding .25s;
+-o-transition: padding .25s;
+transition: padding .25s;
+}
+
+.formProducto button {
+position: relative;
+font-family: "Lato";
+left: 7.2%;
+top: 1.5em;
+text-align: center;;
+width: 120px;
+height: 32px;
+background:#0277BD;
+color:#fff;
+padding:7px 10px 8px 10px;
+text-shadow:0px -1px #278db8;
+border:1px solid #0277BD;
+box-shadow:none;
+-moz-box-shadow:none;
+-webkit-box-shadow:none;
+margin:0 12px 0 0;
+cursor:pointer;
+border-radius: 0.2em;
+*padding:7px 2px 8px 2px; /* IE7 Fix */
+}
+
+.formProducto select{
+  width:93px;
+  height: 33px;
+  position: relative;
+  left: 6.66em;
+  border:1px solid #aaa;
+  box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
+  border-radius:1px;
+  color: #000;
+  font-family: "Lato";
+  font-size: 13px;
+}
+
+.formProducto #LABELDISTINTO input{
+  border:0px solid #aaa;
+  width: 200px;
+  box-shadow: 0px 0px 0px #ccc, 0 0px 0px #eee inset;
+  border-radius:2px;
+  color: #000;
+  font-family: "Lato";
+  font-size: 13px;
+  padding-right:30px;
+  -moz-transition: padding .25s;
+  -webkit-transition: padding .25s;
+  -o-transition: padding .25s;
+  transition: padding .25s;
+}
+
+.imgSelect::-webkit-file-upload-button {
+  visibility: hidden
+}
+.imgSelect::before {
+  position: relative;
+  top: 0.2em;
+  right: 0.6em;
+  content: 'Seleccionar imagen';
+  text-align: center;;
+  width: 120px;
+  height: 32px;
+  background:#607D8B;
+  color:#fff;
+  padding:7px 10px 8px 10px;
+  border:1px solid #607D8B;
+  box-shadow:none;
+  -moz-box-shadow:none;
+  -webkit-box-shadow:none;
+  margin:0 12px 0 0;
+  cursor:pointer;
+  border-radius: 0.2em;
+  *padding:7px 2px 8px 2px; /* IE7 Fix */
 }

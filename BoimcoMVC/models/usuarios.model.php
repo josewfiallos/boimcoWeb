@@ -10,25 +10,6 @@
         return $usuario;
     }
 
-    function insertUsuario($userName, $userEmail,
-                           $timestamp, $password){
-        $strsql = "INSERT INTO usuarios
-                    (usuarioemail, usuarionom, usuariopwd,
-                    usuarioest, usuariofching,  usuariolstlgn,
-                    usuariofatm, usuariofchlp)
-                   VALUES
-                    ('%s', '%s','%s','ACT', FROM_UNIXTIME(%s) , null, 0, null);";
-        $strsql = sprintf($strsql, valstr($userEmail),
-                                    valstr($userName),
-                                    $password,
-                                    $timestamp);
-
-        if(ejecutarNonQuery($strsql)){
-            return getLastInserId();
-        }
-        return 0;
-    }
-
     function obtenerCliente($idUsuario){
       $query=sprintf("SELECT * from clientes where idUsuario='%d';",$idUsuario);
       $cliente=obtenerUnRegistro($query);
@@ -48,5 +29,21 @@
       $query = "UPDATE usuarios SET estadoUsuario='%s' WHERE idUsuario='%d';";
       $query = sprintf($query,$estado,$id);
       return ejecutarNonQuery($query);
+    }
+
+    function abilitarUsuario($id){
+      $estado="ACT";
+      $query = "UPDATE usuarios SET estadoUsuario='%s' WHERE idUsuario='%d';";
+      $query = sprintf($query,$estado,$id);
+      return ejecutarNonQuery($query);
+    }
+
+    function obtenerUsuarios(){
+      $usuarios= array();
+      $selectQuery="SELECT U.idUsuario,primerNombreCliente, primerApellidoCliente, telefonoCliente,
+                    correoUsuario, fechaIngresoUsuario, estadoUsuario FROM usuarios U JOIN
+                    clientes C ON U.idUsuario=C.idUsuario;";
+      $usuarios= obtenerRegistros($selectQuery);
+      return $usuarios;
     }
 ?>
