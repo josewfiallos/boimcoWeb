@@ -25,7 +25,7 @@
     Precio: L {{precioUnitarioProducto}}
   <br><br>
   <label>Cantidad</label>
-  <input type="number" name="cantidadProductosSeleccionados" placeholder="Disponibles: {{cantidadProducto}}" max="{{cantidadProducto}}">
+  <input type="number" name="cantidadProductosSeleccionados" placeholder="Disponibles: {{cantidadProducto}}" max="{{cantidadProducto}}" min="0">
   <br>
   <button class="my_popup_open" type="submit" name="btnAgregar">Agregar a Carrito</button>
   </p>

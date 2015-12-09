@@ -19,7 +19,7 @@
       </td>
       <td id="elim">
         <form method="post">
-            <button type="submit" name="btnEliminar">Eliminar</button>
+            <button type="submit" name="btnEliminar" onclick="return confirm('Si acepta, eliminará este producto de su carrito de comrpas. ¿Desea continuar?')">Eliminar</button>
             <input type="hidden" name="idCarrito" value="{{idCarrito}}">
         </form>
       </td>
@@ -48,7 +48,7 @@
 </div>
 <br>
 <form class="factura" method="post">
-  <button id="btnBorrarCarrito" type="submit" name="btnBorrarCarrito">Eliminar Carrito De Compras</button>
+  <button id="btnBorrarCarrito" type="submit" name="btnBorrarCarrito" onclick="return confirm('Si acepta, eliminará todos los productos de su carrito de compras. ¿Desea continuar?')">Eliminar Carrito De Compras</button>
   <button type="submit" name="btnFacturar">Realizar Compra</button>
 </form>
 {{endif productos}}
