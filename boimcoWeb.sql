@@ -166,12 +166,6 @@ INSERT INTO `boimcoweb`.`roles` (`idRol`, `descripcionRol`) VALUES ('CLT', 'Clie
 INSERT INTO `boimcoweb`.`usuarios` (`idRol`,`contraseniaUsuario`,`correoUsuario`,`fechaIngresoUsuario`,`estadoUsuario`) VALUES ('ADM', md5('12345678'),'admin@boimco.com',now(),'ACT');
 INSERT INTO `boimcoweb`.`productos` (`nombreProducto`, `precioUnitarioProducto`, `cantidadProducto`, `estadoProducto`, `imgProducto`) VALUES ('Ovillo', '10', '10', 'ACT', 'public/imgs/productos/1.jpg');
 INSERT INTO `boimcoweb`.`productos` (`nombreProducto`, `precioUnitarioProducto`, `cantidadProducto`, `estadoProducto`, `imgProducto`) VALUES ('Gorra', '20', '10', 'ACT', 'public/imgs/productos/2.jpg');
-INSERT INTO `boimcoweb`.`productos` (`nombreProducto`, `precioUnitarioProducto`, `cantidadProducto`, `estadoProducto`, `imgProducto`) VALUES ('Camiseta Polo', '45', '10', 'ACT', 'public/imgs/productos/3.jpg');
-INSERT INTO `boimcoweb`.`productos` (`nombreProducto`, `precioUnitarioProducto`, `cantidadProducto`, `estadoProducto`, `imgProducto`) VALUES ('Camiseta Sencilla', '25', '10', 'ACT', 'public/imgs/productos/4.jpg');
-INSERT INTO `boimcoweb`.`productos` (`nombreProducto`, `precioUnitarioProducto`, `cantidadProducto`, `estadoProducto`, `imgProducto`) VALUES ('Gorro', '15', '10', 'ACT', 'public/imgs/productos/5.jpg');
-INSERT INTO `boimcoweb`.`productos` (`nombreProducto`, `precioUnitarioProducto`, `cantidadProducto`, `estadoProducto`, `imgProducto`) VALUES ('Tela', '80', '10', 'ACT', 'public/imgs/productos/6.jpg');
-INSERT INTO `boimcoweb`.`productos` (`nombreProducto`, `precioUnitarioProducto`, `cantidadProducto`, `estadoProducto`, `imgProducto`) VALUES ('Delantal', '100', '10', 'ACT', 'public/imgs/productos/7.jpg');
-INSERT INTO `boimcoweb`.`productos` (`nombreProducto`, `precioUnitarioProducto`, `cantidadProducto`, `estadoProducto`, `imgProducto`) VALUES ('Uniforme', '500', '10', 'ACT', 'public/imgs/productos/8.jpg');
 
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;

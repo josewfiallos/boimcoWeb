@@ -54,7 +54,7 @@
     </div>
     <div class="Footer">
       <p>
-        Derechos Reservados 2015, Creado por Estudiantes Portales Web
+        Derechos Reservados 2015
       </p>
       <a href="https://www.twitter.com"> <div class="Twitter"></div></a>
       <a href="https://www.facebook.com"><div class="Facebook"></div></a>

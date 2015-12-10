@@ -21,7 +21,7 @@
 </div>
   {{endfor productosDetalles}}
   <form class="butonRegreso" method="post">
-    <button type="submit" name="btnRegresar">Volver a Compras</button>
+    <button id="sabe" type="submit" name="btnRegresar">Volver a Compras</button>
   </form>
   <br><br>
 <br>
